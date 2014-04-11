@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     sass: {
       compileCSS: {
         files: {
-          '<%= config.dist %>/css/main.css': '<%= config.src %>/css/main.scss'
+          '<%= config.dist %>/css/styles.css': '<%= config.src %>/css/styles.scss'
         }
       }
     },
