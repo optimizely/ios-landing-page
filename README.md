@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ios
 
 > IOS landing page.
@@ -19,4 +18,3 @@ All contributions are welcome! The simplest way to show your support for this pr
 =======
 ios-landing-page
 ================
->>>>>>> f6219d2257e0d7a03950258660b11a969ff801cf
