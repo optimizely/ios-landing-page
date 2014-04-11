@@ -32,13 +32,17 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
         tasks: ['assemble']
       },
+      sass: {
+        files: ['<%= config.src %>/css/*.scss']
+        task: ['sass']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
           '<%= config.dist %>/{,*/}*.html',
-          '<%= config.dist %>/assets/{,*/}*.css',
+          '<%= config.dist %>/css/{,*/}*.css',
           '<%= config.dist %>/assets/{,*/}*.js',
           '<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -61,14 +65,18 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    sass: {
+      compileCSS: {
+        files: {
+          '<%= config.dist %>/css/main.css': '<%= config.src %>/css/main.scss'
+        }
+      }
+    },
     assemble: {
       pages: {
         options: {
           flatten: true,
-          assets: '<%= config.dist %>/assets',
           layout: '<%= config.src %>/templates/layouts/default.hbs',
-          data: '<%= config.src %>/data/*.{json,yml}',
           partials: '<%= config.src %>/templates/partials/*.hbs'
         },
         files: {
@@ -84,12 +92,14 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('server', [
     'clean',
+    'sass',
     'assemble',
     'connect:livereload',
     'watch'
@@ -97,6 +107,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'sass',
     'assemble'
   ]);
 
