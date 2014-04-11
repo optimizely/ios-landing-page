@@ -33,8 +33,8 @@ module.exports = function(grunt) {
         tasks: ['assemble']
       },
       sass: {
-        files: ['<%= config.src %>/css/*.scss']
-        task: ['sass']
+        files: ['<%= config.src %>/css/*.scss'],
+        tasks: ['sass']
       },
       livereload: {
         options: {
