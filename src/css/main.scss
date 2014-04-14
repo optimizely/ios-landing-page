@@ -95,17 +95,20 @@ textarea {
 
 $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
 #ios {
-    background: #00325e;
+    margin: 0;
     h1, h2, h3, h4 {
         font-family: $font-family;
     }
+    p, a, #submit-signup {
+        font-family: $font-family;
+    }
     #top {
+        background: #00325e;
+        box-sizing: border-box;
         header {display: none;}
+        width: 100%;
     }
     #hero {
-        p, a, #submit-signup {
-            font-family: $font-family;
-        }
         color: #fff;
         text-align: center;
         h1 {
@@ -119,6 +122,7 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
             border: 2px solid #fff;
             padding: 10px 0;
             margin-bottom: 3em;
+            background: url('/img/video-play.svg');
         }
         .signup-form{
             #email-signup {
@@ -141,6 +145,34 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
                 text-transform: uppercase;
                 padding: 10px;
             }
+        }
+    }
+    #visual-changes-features {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #f5f5f5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f5f5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#f5f5f5 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
+
+        padding-top: 2em;
+        h2 {color: #6b6b6b;}
+        p {color: #aaa;}
+        #visual-changes-demo {
+            display: none;
+        }
+        .feature {
+            h3, p {
+                margin: 0;
+            }
+            margin-bottom: 2em;
+        }
+        #visual-changes {
+            background: url('/img/paintbrush.svg') 0 5px no-repeat;
+            background-size: 39px 38px;
+            padding-left: 50px;
         }
     }
 }

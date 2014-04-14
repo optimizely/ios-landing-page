@@ -36,6 +36,10 @@ module.exports = function(grunt) {
         files: ['<%= config.src %>/css/*.scss'],
         tasks: ['sass']
       },
+      copy: {
+        files: ['<%= config.src %>/img/*.{svg,png,jpg}'],
+        tasks: ['copy']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -84,6 +88,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      images: {
+        files: [
+          {expand: true, flatten: true, src: '<%= config.src %>/img/*.{svg,png,jpg}', dest: '<%= config.dist %>/img/'}
+        ]
+      }
+    },
 
     // Before generating any new files,
     // remove any previously-created files.
@@ -93,12 +104,14 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('server', [
     'clean',
+    'copy',
     'sass',
     'assemble',
     'connect:livereload',
@@ -107,6 +120,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'clean',
+    'copy',
     'sass',
     'assemble'
   ]);
