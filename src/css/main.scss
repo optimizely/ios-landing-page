@@ -93,8 +93,57 @@ textarea {
 
 
 
-
-
+$font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
+#ios {
+    background: #00325e;
+    h1, h2, h3, h4 {
+        font-family: $font-family;
+    }
+    #top {
+        header {display: none;}
+    }
+    #hero {
+        p, a, #submit-signup {
+            font-family: $font-family;
+        }
+        color: #fff;
+        text-align: center;
+        h1 {
+         font-size: 2.5em; 
+        }
+        #video {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            border: 2px solid #fff;
+            padding: 10px 0;
+            margin-bottom: 3em;
+        }
+        .signup-form{
+            #email-signup {
+                border: 1px solid #889aac;
+                display: block;
+                width: 100%;
+                background: #4d6d88;
+                font-size: 1em;
+                padding: 10px;
+                box-sizing: border-box;
+                color: #cfcfcf;
+            }
+            #submit-signup {
+                background: #90b71c;
+                display: block;
+                color: #fff;
+                border: none;
+                width: 100%;
+                font-size: 1em;
+                text-transform: uppercase;
+                padding: 10px;
+            }
+        }
+    }
+}
 
 
 

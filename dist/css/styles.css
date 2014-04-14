@@ -158,6 +158,46 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#ios {
+  background: #00325e; }
+  #ios h1, #ios h2, #ios h3, #ios h4 {
+    font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif; }
+  #ios #top header {
+    display: none; }
+  #ios #hero {
+    color: #fff;
+    text-align: center; }
+    #ios #hero p, #ios #hero a, #ios #hero #submit-signup {
+      font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif; }
+    #ios #hero h1 {
+      font-size: 2.5em; }
+    #ios #hero #video {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      border: 2px solid #fff;
+      padding: 10px 0;
+      margin-bottom: 3em; }
+    #ios #hero .signup-form #email-signup {
+      border: 1px solid #889aac;
+      display: block;
+      width: 100%;
+      background: #4d6d88;
+      font-size: 1em;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #cfcfcf; }
+    #ios #hero .signup-form #submit-signup {
+      background: #90b71c;
+      display: block;
+      color: #fff;
+      border: none;
+      width: 100%;
+      font-size: 1em;
+      text-transform: uppercase;
+      padding: 10px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
