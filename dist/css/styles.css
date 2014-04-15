@@ -185,29 +185,53 @@ textarea {
       padding: 10px 0;
       margin-bottom: 3em;
       background: url('/img/video-play.svg'); }
-    #ios #hero .signup-form #email-signup {
+    #ios #hero #email-signup {
       border: 1px solid #889aac;
-      display: block;
-      width: 100%;
       background: #4d6d88;
-      font-size: 1em;
-      padding: 1em 0.5em;
-      box-sizing: border-box;
-      color: #cfcfcf;
-      -webkit-appearance: none;
-      border-radius: 0;
-      margin-bottom: 0.5em; }
-    #ios #hero .signup-form #submit-signup {
+      color: #cfcfcf; }
+    #ios #hero #submit-signup {
       background: #90b71c;
-      display: block;
-      color: #fff;
-      border: none;
-      width: 100%;
-      font-size: 1em;
+      color: #fff; }
+  #ios .signup-form #email-signup {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em 0.5em;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+    margin-bottom: 0.5em; }
+  #ios .signup-form #submit-signup {
+    display: block;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1.5em 0;
+    -webkit-appearance: none;
+    border-radius: 0; }
+  #ios section {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+  #ios .feature-container {
+    padding-top: 2em; }
+  #ios .feature {
+    padding-top: 2.7em;
+    margin-bottom: 2.5em;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center; }
+    #ios .feature h3, #ios .feature p {
+      margin: 0; }
+    #ios .feature h3 {
       text-transform: uppercase;
-      padding: 1.5em 0;
-      -webkit-appearance: none;
-      border-radius: 0; }
+      margin-bottom: 0.3em; }
+  #ios .light h2 {
+    color: #6b6b6b; }
+  #ios .light p {
+    color: #aaa; }
+  #ios .light .feature h3 {
+    color: #9b9b9b; }
   #ios #visual-changes-features {
     background: #ffffff;
     /* Old browsers */
@@ -225,27 +249,9 @@ textarea {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
     /* IE6-9 */
-    padding: 2em 0 2em 0; }
-    #ios #visual-changes-features h2 {
-      color: #6b6b6b; }
-    #ios #visual-changes-features p {
-      color: #aaa; }
+    box-sizing: border-box; }
     #ios #visual-changes-features #visual-changes-demo {
       display: none; }
-    #ios #visual-changes-features .feature {
-      padding-top: 40px;
-      margin-bottom: 2em;
-      background-position: center top;
-      background-repeat: no-repeat;
-      text-align: center; }
-      #ios #visual-changes-features .feature h3, #ios #visual-changes-features .feature p {
-        margin: 0; }
-      #ios #visual-changes-features .feature h3 {
-        text-transform: uppercase;
-        margin-bottom: 0.3em;
-        color: #9b9b9b; }
-    #ios #visual-changes-features #visual-changes-icons {
-      padding-top: 2em; }
     #ios #visual-changes-features #visual-changes {
       background-image: url('/img/paintbrush.svg');
       background-size: 39px 38px; }
@@ -256,7 +262,34 @@ textarea {
       background-image: url('/img/instant-rollout.svg');
       background-size: 39px 38px; }
   #ios #flexible-powerful {
-    background: #003366; }
+    background: #003366;
+    color: #fff; }
+    #ios #flexible-powerful #switch-interface-cont {
+      display: none; }
+    #ios #flexible-powerful #live-variables {
+      background-image: url('/img/live-variables.svg');
+      background-size: 39px 38px; }
+    #ios #flexible-powerful #web-mobile {
+      background-image: url('/img/web-mobile.svg');
+      background-size: 49px 48px; }
+    #ios #flexible-powerful #code-blocks {
+      background-image: url('/img/code-blocks.svg');
+      background-size: 39px 38px; }
+  #ios #trusted #world-class {
+    background-image: url('/img/world-class.svg');
+    background-size: 39px 38px; }
+  #ios #trusted #incredibly-responsive {
+    background-image: url('/img/responsive.svg');
+    background-size: 39px 38px; }
+  #ios #trusted #enterprise-scale-startup-speed {
+    background-image: url('/img/enterprise.svg');
+    background-size: 39px 38px; }
+  #ios #signup-bottom {
+    background: #f8f8f8;
+    border-top: 1px solid #f3f3f3; }
+    #ios #signup-bottom h2 {
+      text-align: center;
+      color: #6b6b6b; }
 
 /* ==========================================================================
    Helper classes
