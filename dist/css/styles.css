@@ -172,7 +172,8 @@ textarea {
       display: none; }
   #ios #hero {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 2em; }
     #ios #hero h1 {
       font-size: 2.5em; }
     #ios #hero #video {
@@ -190,9 +191,12 @@ textarea {
       width: 100%;
       background: #4d6d88;
       font-size: 1em;
-      padding: 10px;
+      padding: 1em 0.5em;
       box-sizing: border-box;
-      color: #cfcfcf; }
+      color: #cfcfcf;
+      -webkit-appearance: none;
+      border-radius: 0;
+      margin-bottom: 0.5em; }
     #ios #hero .signup-form #submit-signup {
       background: #90b71c;
       display: block;
@@ -201,7 +205,9 @@ textarea {
       width: 100%;
       font-size: 1em;
       text-transform: uppercase;
-      padding: 10px; }
+      padding: 1.5em 0;
+      -webkit-appearance: none;
+      border-radius: 0; }
   #ios #visual-changes-features {
     background: #ffffff;
     /* Old browsers */
@@ -219,7 +225,7 @@ textarea {
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 );
     /* IE6-9 */
-    padding-top: 2em; }
+    padding: 2em 0 2em 0; }
     #ios #visual-changes-features h2 {
       color: #6b6b6b; }
     #ios #visual-changes-features p {
@@ -227,13 +233,30 @@ textarea {
     #ios #visual-changes-features #visual-changes-demo {
       display: none; }
     #ios #visual-changes-features .feature {
-      margin-bottom: 2em; }
+      padding-top: 40px;
+      margin-bottom: 2em;
+      background-position: center top;
+      background-repeat: no-repeat;
+      text-align: center; }
       #ios #visual-changes-features .feature h3, #ios #visual-changes-features .feature p {
         margin: 0; }
+      #ios #visual-changes-features .feature h3 {
+        text-transform: uppercase;
+        margin-bottom: 0.3em;
+        color: #9b9b9b; }
+    #ios #visual-changes-features #visual-changes-icons {
+      padding-top: 2em; }
     #ios #visual-changes-features #visual-changes {
-      background: url('/img/paintbrush.svg') 0 5px no-repeat;
-      background-size: 39px 38px;
-      padding-left: 50px; }
+      background-image: url('/img/paintbrush.svg');
+      background-size: 39px 38px; }
+    #ios #visual-changes-features #starts-seconds {
+      background-image: url('/img/timer.svg');
+      background-size: 39px 38px; }
+    #ios #visual-changes-features #instant-rollout {
+      background-image: url('/img/instant-rollout.svg');
+      background-size: 39px 38px; }
+  #ios #flexible-powerful {
+    background: #003366; }
 
 /* ==========================================================================
    Helper classes

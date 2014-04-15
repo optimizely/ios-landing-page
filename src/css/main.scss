@@ -111,6 +111,7 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
     #hero {
         color: #fff;
         text-align: center;
+        padding-bottom: 2em;
         h1 {
          font-size: 2.5em; 
         }
@@ -131,9 +132,12 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
                 width: 100%;
                 background: #4d6d88;
                 font-size: 1em;
-                padding: 10px;
+                padding: 1em .5em;
                 box-sizing: border-box;
                 color: #cfcfcf;
+                -webkit-appearance: none;
+                border-radius: 0;
+                margin-bottom: .5em;
             }
             #submit-signup {
                 background: #90b71c;
@@ -143,7 +147,9 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
                 width: 100%;
                 font-size: 1em;
                 text-transform: uppercase;
-                padding: 10px;
+                padding: 1.5em 0;
+                -webkit-appearance: none;
+                border-radius: 0;
             }
         }
     }
@@ -157,23 +163,45 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
         background: linear-gradient(to bottom,  #ffffff 0%,#f5f5f5 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f5f5',GradientType=0 ); /* IE6-9 */
 
-        padding-top: 2em;
+        padding: 2em 0 2em 0;
         h2 {color: #6b6b6b;}
         p {color: #aaa;}
         #visual-changes-demo {
             display: none;
         }
         .feature {
+            padding-top: 40px;
             h3, p {
                 margin: 0;
             }
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: .3em;
+                color: #9b9b9b;
+            }
             margin-bottom: 2em;
+            background-position: center top;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        #visual-changes-icons {
+            padding-top: 2em;
         }
         #visual-changes {
-            background: url('/img/paintbrush.svg') 0 5px no-repeat;
+            background-image: url('/img/paintbrush.svg');
             background-size: 39px 38px;
-            padding-left: 50px;
         }
+        #starts-seconds {
+            background-image: url('/img/timer.svg');
+            background-size: 39px 38px;
+        }
+        #instant-rollout {
+            background-image: url('/img/instant-rollout.svg');
+            background-size: 39px 38px;
+        }
+    }
+    #flexible-powerful {
+        background: #003366;
     }
 }
 
