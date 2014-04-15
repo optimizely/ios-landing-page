@@ -542,6 +542,20 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         #visual-change-photo.b {
             background: url(/img/img-b.jpg);
         }
+        #visual-change-button {
+            position: absolute;
+            top: 309px;
+            left: 80px;
+            display: block;
+            background: #29b8fc;
+            width: 247px;
+            height: 35px;
+            text-align: center;
+            color: #fff;
+            padding: 7px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
     }
 }
 
