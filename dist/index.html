@@ -98,7 +98,7 @@
                     </div>
                     <div id="visual-change-button-text" class="change-option">
                       <p>Button text</p>
-                      <input id="visual-change-button-text" type="type" placeholder="Book it now!">
+                      <input id="visual-change-input" type="text" placeholder="Book it now!">
                     </div>
                     <div id="visual-change-button-color" class="change-option">
                       <p>Button color</p>
@@ -249,5 +249,15 @@
             </div><!--/.row-->
           </div><!--/.container-->
         </footer>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script>
+          $(function(){
+            var textDisplay = $('#visual-change-button');
+            var textInput = $('#visual-change-input')
+            textInput.keyup(function(){
+              textDisplay.text( textInput.val() );
+            });
+          });
+        </script>
     </body>
 </html>
