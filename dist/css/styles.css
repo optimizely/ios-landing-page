@@ -159,11 +159,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 #ios {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   margin: 0; }
-  #ios h1, #ios h2, #ios h3, #ios h4 {
-    font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif; }
-  #ios p, #ios a, #ios #submit-signup {
-    font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif; }
   #ios #top {
     background: #00325e;
     box-sizing: border-box;
@@ -212,6 +209,18 @@ textarea {
   #ios section {
     padding-top: 2em;
     padding-bottom: 2em; }
+  #ios h2 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 300; }
+  #ios p {
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.7; }
+  #ios b {
+    font-weight: 500; }
+  #ios .section-container {
+    text-align: center; }
   #ios .feature-container {
     padding-top: 2em; }
   #ios .feature {
@@ -388,9 +397,67 @@ textarea {
       width: 129px;
       padding: 0.53em 0;
       -webkit-appearance: none;
-      margin: -10px 0 0 -4px; }
-  #ios section h2, #ios section p {
-    text-align: center; } }
+      margin: -10px 0 0 -4px; } }
+
+@media only screen and (min-width: 60em) {
+  #ios .section-container {
+    text-align: left; }
+  #ios #visual-changes-features {
+    height: 700px; }
+    #ios #visual-changes-features .container {
+      position: relative; }
+    #ios #visual-changes-features .section-container {
+      position: absolute;
+      width: 32em;
+      right: 0; }
+    #ios #visual-changes-features #visual-changes-demo {
+      display: block;
+      height: 40.75em;
+      width: 32.5em;
+      background: url(/img/iphone-1.png) left top no-repeat;
+      position: relative; }
+    #ios #visual-changes-features #visual-change-options {
+      background: #fff;
+      width: 14em;
+      position: absolute;
+      border: 1px solid #cdcdcd;
+      border-left: 0;
+      box-sizing: border-box;
+      left: 21.8em;
+      bottom: 7.5em;
+      padding: 0.5em 1em;
+      border-radius: 2px; }
+      #ios #visual-changes-features #visual-change-options p {
+        text-transform: uppercase;
+        color: #9b9b9b; }
+    #ios #visual-changes-features .feature {
+      text-align: left;
+      background-position: left top;
+      padding: 0 0 0 3.7em; }
+      #ios #visual-changes-features .feature h3 {
+        font-weight: 300; }
+  #ios #visual-changes-icons {
+    width: 21em;
+    position: absolute;
+    right: 0;
+    top: 12em; }
+  #ios .visual-slider-cont {
+    text-transform: uppercase;
+    border: 1px solid #cacaca;
+    border-radius: 2px;
+    background: #f6f6f6;
+    position: relative;
+    width: 7.75em;
+    height: 2.5em; }
+  #ios .slider {
+    position: absolute;
+    height: 2.57em;
+    background: #fff;
+    border: 1px solid #9f9f9f;
+    border-radius: 2px;
+    width: 3.875em;
+    margin-top: -1px;
+    box-sizing: border-box; } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 
