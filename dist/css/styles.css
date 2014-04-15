@@ -425,11 +425,12 @@ textarea {
       box-sizing: border-box;
       left: 21.8em;
       bottom: 7.5em;
-      padding: 0.5em 1em;
+      padding: 0.5em 1.7em;
       border-radius: 2px; }
       #ios #visual-changes-features #visual-change-options p {
         text-transform: uppercase;
-        color: #9b9b9b; }
+        color: #9b9b9b;
+        margin-bottom: 0; }
     #ios #visual-changes-features .feature {
       text-align: left;
       background-position: left top;
@@ -444,20 +445,76 @@ textarea {
   #ios .visual-slider-cont {
     text-transform: uppercase;
     border: 1px solid #cacaca;
-    border-radius: 2px;
+    border-radius: 3px;
     background: #f6f6f6;
     position: relative;
     width: 7.75em;
-    height: 2.5em; }
+    height: 2.5em;
+    z-index: 1; }
+    #ios .visual-slider-cont span {
+      line-height: 1em;
+      position: absolute;
+      color: #9f9f9f;
+      font-weight: 300; }
   #ios .slider {
     position: absolute;
-    height: 2.57em;
+    height: 2.59em;
     background: #fff;
     border: 1px solid #9f9f9f;
-    border-radius: 2px;
+    border-radius: 3px;
     width: 3.875em;
     margin-top: -1px;
-    box-sizing: border-box; } }
+    box-sizing: border-box;
+    right: 0;
+    z-index: 2; }
+  #ios .left-label, #ios .right-label {
+    top: 0.2em;
+    font-size: 1.8em; }
+  #ios .left-label {
+    z-index: 3;
+    left: 0.7em; }
+  #ios .right-label {
+    z-index: 4;
+    right: 0.7em; }
+  #ios #visual-change-button-text input {
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 3px;
+    border: 1px solid #9f9f9f;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 5px #ccc;
+    font-size: 0.9em; }
+  #ios .change-option {
+    margin-bottom: 1.5em; }
+  #ios .color-btn {
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #9f9f9f;
+    border-radius: 3px;
+    margin-right: 1.3em;
+    box-shadow: inset 0 0 5px #999;
+    cursor: pointer; }
+  #ios #visual-change-blue {
+    background: #29b8fc; }
+  #ios #visual-change-green {
+    background: #c4de9e; }
+  #ios #visual-change-orange {
+    background: #f7ad84;
+    margin-right: 0; }
+  #ios #visual-change-photo {
+    display: block;
+    position: absolute;
+    height: 165px;
+    width: 247px;
+    top: 144px;
+    left: 80px;
+    z-index: 6; }
+  #ios #visual-change-photo.a {
+    background: url(/img/img-a.jpg); }
+  #ios #visual-change-photo.b {
+    background: url(/img/img-b.jpg); } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 

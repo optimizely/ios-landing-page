@@ -429,11 +429,12 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 box-sizing: border-box;
                 left: 21.8em;
                 bottom: 7.5em;
-                padding: .5em 1em;
+                padding: .5em 1.7em;
                 border-radius: 2px;
                 p {
                     text-transform: uppercase;
                     color: #9b9b9b;
+                    margin-bottom: 0;
                 }
             }
             .feature {
@@ -454,21 +455,92 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         .visual-slider-cont {
             text-transform: uppercase;
             border: 1px solid #cacaca;
-            border-radius: 2px;
+            border-radius: 3px;
             background: #f6f6f6;
             position: relative;
             width: 7.75em;
             height: 2.5em;
+            z-index: 1;
+            span {
+                line-height: 1em;
+                position: absolute;
+                color: #9f9f9f;
+                font-weight: 300;
+            }
         }
         .slider {
             position: absolute;
-            height: 2.57em;
+            height: 2.59em;
             background: #fff;
             border: 1px solid #9f9f9f;
-            border-radius: 2px;
+            border-radius: 3px;
             width: 3.875em;
             margin-top: -1px;
             box-sizing: border-box;
+            right: 0;
+            z-index: 2;
+        }
+        .left-label, .right-label {
+            top: .2em;
+            font-size: 1.8em;
+        }
+        .left-label {
+            z-index: 3;
+            left: .7em;
+        }
+        .right-label {
+            z-index: 4;
+            right: .7em;
+        }
+        #visual-change-button-text {
+            input {
+                width: 100%;
+                padding: .7em;
+                border-radius: 3px;
+                border: 1px solid #9f9f9f;
+                box-sizing: border-box;
+                box-shadow: inset 0 0 5px #ccc;
+                font-size: .9em;
+            }
+        }
+        .change-option {
+            margin-bottom: 1.5em;
+        }
+        .color-btn {
+            display: block;
+            float: left;
+            height: 40px;
+            width: 40px;
+            border: 1px solid #9f9f9f;
+            border-radius: 3px;
+            margin-right: 1.3em;
+            box-shadow: inset 0 0 5px #999;
+            cursor: pointer;
+        }
+        #visual-change-blue {
+            background: #29b8fc;
+        }
+        #visual-change-green {
+            background: #c4de9e;
+        }
+        #visual-change-orange {
+            background: #f7ad84;
+            margin-right: 0;
+        }
+        #visual-change-photo {
+            display: block;
+            position: absolute;
+            height: 165px;
+            width: 247px;
+            top: 144px;
+            left: 80px;
+            z-index: 6;
+        }
+        #visual-change-photo.a {
+            background: url(/img/img-a.jpg);
+        }
+        #visual-change-photo.b {
+            background: url(/img/img-b.jpg);
         }
     }
 }
