@@ -9,11 +9,50 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <link rel="stylesheet" href="https://www.optimizely.com/static/fonts/51725/AC0879F154810B232.css">
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <!--<script src="js/vendor/modernizr-2.7.1.min.js"></script>-->
     </head>
     <body id="ios">
         <div id="top">
+          <header>
+            <p class="logo"><a href="/">Optimizely</a></p>
+            <ul class="nav-main">
+              <li class="dropdown-hover"><a href="/benefits">Features &amp; Benefits</a>
+                <ul class="dropdown-menu-nav-main">
+                  <li><a href="/pricing">Plans and Pricing</a></li>
+                  <li><a href="/benefits">Benefits</a></li>
+                  <li><a href="/agencies" class="SL_hide">Optimizely for Agencies</a></li>
+                  <li><a href="/developers" class="SL_hide">Optimizely for Developers</a></li>
+                  <li><a href="/ecommerce" class="SL_hide">Optimizely for E-commerce</a></li>
+                  <li><a href="/enterprises" class="SL_hide">Optimizely for Enterprises</a></li>
+                  <li><a href="/publishers" class="SL_hide">Optimizely for Publishers</a></li>
+                  <li><a href="/small-business" class="SL_hide">Optimizely for Small Business</a></li>
+                </ul>
+              </li>
+              <li><a href="/pricing">Pricing</a></li>
+              <li class="dropdown-hover"><a href="/customers">Customers</a>
+                <ul class="dropdown-menu-nav-main">
+                  <li><a href="/customers">Customer List</a></li>
+                  <li><a href="/customers/customer-stories">Customer Stories</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-hover"><a href="/ab-testing">Resources</a>
+                <ul class="dropdown-menu-nav-main">
+                  <li><a href="/ab-testing">What is A/B Testing?</a></li>
+                  <li><a href="/split-testing">What is Split Testing?</a></li>
+                  <li><a href="/gettingstarted">Getting Started</a></li>
+                  <li><a href="/resources/live-demo-webinar">Live Demo Signup</a></li>
+                  <li><a href="/faq">FAQ</a></li>
+                  <li><a href="https://help.optimizely.com" target="_blank">Knowledge Base</a></li>
+                  <li><a href="/docs/api">API Documentation</a></li>
+                  <li id="SL-link-blog" class="SL_swap"><a href="http://blog.optimizely.com" target="_blank">Blog</a></li>
+                  {% comment %}<li><a href="/whatismultivariatetesting">What is Multivariate Testing?</a></li>{% endcomment %}
+                  {% comment %}<li><a href="/casestudies">Case Studies</a></li>{% endcomment %}
+                </ul>
+              </li>
+              <li><a href="/jobs">Jobs</a></li>
+            </ul>
+          </header>
           <header>
             <p id="logo">Optimizely</p>
             <ul>
@@ -30,8 +69,8 @@
             <div class="signup-form">
               <p>Announcing Optimizely for iOS Beta.</p>
               <form class="signup-ios">
-                <input type="text" id="email-signup" placeholder="email address">
-                <input type="submit" value="Sign up" id="submit-signup">
+                <input type="text" class="email-signup" placeholder="email address">
+                <input type="submit" value="Sign up" class="submit-signup">
               </form>
             </div><!--/.signup-form-->
           </section><!--/#hero-->
@@ -127,16 +166,75 @@
             <section id="signup-bottom">
               <h2>Sign up for Optimizely iOS beta</h2>
               <div class="signup-form">
-                <p>Announcing Optimizely for iOS Beta.</p>
                 <form class="signup-ios">
-                  <input type="text" id="email-signup" placeholder="email address">
-                  <input type="submit" value="Sign up" id="submit-signup">
+                  <input type="text" class="email-signup" placeholder="email address">
+                  <input type="submit" value="Sign up" class="submit-signup">
                 </form>
               </div><!--/.signup-form-->
             </section>                        
           </main>
           
         </div>
-        <footer></footer>
+        <footer class="container">
+          <div class="row">
+            <div class="footer-rightsreserved columns five">
+              <p>&copy; , Optimizely. All Rights Reserved</p>
+              <p>
+                <span id="SL-link-terms" class="SL_swap"><a href="/terms">Terms of Service</a></span>
+                <span>|</span>
+                <span id="SL-link-privacy" class="SL_swap"><a href="/privacy">Privacy Policy</a></span>
+                <span>|</span>
+                <a href="/security">Security</a>
+              </p>
+              <p>
+                <span id="SL-link-twitter" class="SL_swap"><a href="http://www.twitter.com/optimizely" class="footer-twitter">Twitter</a></span>
+                <span id="SL-link-facebook" class="SL_swap"><a href="http://www.facebook.com/optimizely" class="footer-facebook">Facebook</a></span>
+                <span id="SL-link-gplus" class="SL_swap"><a href="https://plus.google.com/113842166556345533815/posts" class="footer-gplus">Google Plus</a></span>
+              </p>
+            </div><!--/.footer-rightsreserved-->
+            <div class="columns three">
+              <h4>Product Features &amp; Benefits</h4>
+              <p><a href="/pricing">Plans and Pricing </a></p>
+              <p><a href="/benefits">Benefits</a></p>
+              <p><a href="/mobile" class="SL_hide">iOS Developer Preview</a></p>
+              <p><a href="/agencies" class="SL_hide">Optimizely for Agencies</a></p>
+              <p><a href="/developers" class="SL_hide">Optimizely for Developers</a></p>
+              <p><a href="/ecommerce" class="SL_hide">Optimizely for E-commerce</a></p>
+              <p><a href="/enterprises" class="SL_hide">Optimizely for Enterprises</a></p>
+              <p><a href="/publishers" class="SL_hide">Optimizely for Publishers</a></p>
+              <p><a href="/small-business" class="SL_hide">Optimizely for Small Business</a></p>
+            </div>
+            <div class="columns two">
+              <h4>Customers</h4>
+              <p><a href="/customers">Customer List</a></p>
+              <p><a href="/customers/customer-stories">Customer Stories</a></p>
+            </div>
+            <div class="columns three">
+              <h4>Resources</h4>
+              <p><a href="/ab-testing">What is A/B Testing?</a></p>
+              <p><a href="/split-testing">What is Split Testing?</a></p>
+              <p><a href="/gettingstarted">Getting Started</a></p>
+              <p><a href="/resources/live-demo-webinar">Live Demo Signup</a></p>
+              <p><a href="/faq">FAQ</a></p>
+              <p><a href="https://help.optimizely.com" target="_blank">Knowledge Base</a></p>
+              <p><a href="/docs/api">API Documentation</a></p>
+              <p id="SL-link-blog" class="SL_swap"><a href="http://blog.optimizely.com" target="_blank">Blog</a></p>
+            </div>
+            <div class="columns one">
+              <h4>About</h4>
+              <p><a href="/about">About</a></p>
+              <p><a href="/jobs">Jobs</a></p>
+              <p><a href="/press">Press</a></p>
+              <p><a href="/events">Events</a></p>
+              <p><a href="/contact">Contact</a></p>
+            </div>
+            <div class="columns two">
+              <h4>Other</h4>
+              <p><a href="/partners">Certified Partners</a></p>
+              <p><a href="/demo">Request a Demo</a></p>
+              <p><a href="/opt_out">Opt Out</a></p>
+            </div>
+          </div><!--/.row-->
+        </footer>
     </body>
 </html>

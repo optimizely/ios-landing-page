@@ -94,6 +94,7 @@ textarea {
 
 
 $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
+$logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjYyMi43MDdweCIgaGVpZ2h0PSIxMzMuMzcxcHgiIHZpZXdCb3g9IjAgMCA2MjIuNzA3IDEzMy4zNzEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYyMi43MDcgMTMzLjM3MSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlPi5zdHlsZTB7ZmlsbDoJI0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBkPSJNMTA4LjU5IDYwLjc5NGwxLjI5NC0xMi45MzljLTAuMjQ3LTUuOTQ1LTEuNjU4LTExLjMxMS00LjIwMi0xNi4yMzhsLTYuNzk5IDkuNCBjMC45MzkgMy4xIDEuMyA2LjUgMSAxMC4wNDFjLTEuMjk0IDE2LjE3LTE1Ljk4NSAyOS4yNzctMzIuODE1IDI5LjI3N2MtMy45NTEgMC03LjY2OS0wLjcyMy0xMS4wMjgtMi4wMzdsNDAuNjMyLTQyLjQ0NSBsMTcuMTU2LTE3LjQwNWwtMTIuMjIgNi40NTlDOTMuNTQyIDE0LjcgODAuNSA4LjYgNjUuNiA5LjI0N2MtMjUuNjkxIDEuMDI4LTQ3LjUxOSAyMS45MjktNDguNzUzIDQ2LjcgYy0xLjIzNSAyNC44IDE4LjYgNDQgNDQuMyA0Mi45NjVDODMuNzY1IDk4IDEwMy40IDgxLjYgMTA4LjYgNjAuNzk0eiBNMTU0Ljc0IDcxIGMwLjY5NC02LjkzOSAwLjExOS0xMS45NzgtMS43MjctMTUuMTFjLTEuODA0LTMuMTMtNC45NzEtNC42OTYtOS40OTgtNC42OThjLTEuOTkgMC00LjAxMiAwLjMxOC02LjA2MyAxIGMtMi4wMTIgMC42MzUtNC4wMzEgMS41ODYtNi4wNjMgMi44NTVsLTMuNTg3IDM1Ljg3M2MxLjEzNCAwLjUgMi40IDAuOSAzLjggMS4wNzhjMS40MTcgMC4yIDMuMSAwLjMgNSAwLjMgYzUuNDE2IDAgOS42MTMtMS43NTYgMTIuNTktNS4yN0MxNTIuMTgyIDgzLjUgMTU0IDc4LjEgMTU0LjcgNzEuMDI1eiBNMjA0Ljg3MiAxMDguNjExYy05LjA1OSAwLTE1LjQ3Ni0xLjg2MS0xOS4yNS01LjU4OCBjLTMuNzM0LTMuNzIzLTUuMTc3LTkuODE4LTQuMzMtMTguMjg1bDMuMzM0LTMzLjMzaC04LjExN2MxLjQxIDUuNCAxLjcgMTEuOCAxIDE5LjIgYy0xLjEzOSAxMS4zODYtNC45NTggMjAuNTcxLTExLjQ1MyAyNy41NTRjLTYuNDU2IDYuOTg0LTEzLjkxNiAxMC40NzctMjIuMzggMTAuNDc3Yy0zLjU1NiAwLTYuNjA2LTAuNDAyLTkuMTQ5LTEuMjA3IGMtMi41NDQtMC44MDMtNS4yMTMtMi4wNTEtOC4wMDYtMy43NDZsLTIuOTcyIDI5LjcxM2gtMjIuMjIxbDQuMDI1LTQwLjI1NGMtMTEuODY0IDE1Ljg5MS0zMC42NDEgMjYuMzM2LTUwLjk5MSAyNi4zIGMtMzIuNTU3IDAtNTYuODEtMjYuNzQtNTQuMTcxLTU5LjcyN0MyLjgzNiAyNi43IDMxLjQgMCA2My45IDBjMTYuNTA1IDAgMzAuOSA2LjkgNDAuNyAxNy45NDZsMTguNzI3LTcuMTcyIGwtMTEuMDY1IDE4LjQ0M2MxLjA5MSAyLjEgMiA0LjQgMi45IDYuNjk4aDE4LjE3bC0wLjc0MyA3LjQyOGMzLjUzNy0yLjc5MyA3LjA4Ny01LjA1NyAxMC42NDctNi43OTMgYzMuNTU4LTEuNzM0IDcuNTU5LTIuNjAxIDEyLjAwNi0yLjYwM2MzLjY5MSAwIDYuOSAwLjcgOS44IDEuOTY4aDIxLjIwNmwyLjAzOC0yMC4zOGgyMi4yMjJsLTIuMDM4IDIwLjM4aDIxLjM5NiBsLTEuNTQ5IDE1LjQ5MmgtMjEuMzk2bC0yLjUyNyAyNS4yNjhjLTAuMjUgMi40OTgtMC40NDggNC42NzgtMC41OSA2LjUzOWMtMC4xNDUgMS45IDAgMy41IDAuNSA1IGMwLjQ0MyAxLjUgMS40IDIuNyAyLjggMy41NTdjMS40MzkgMC44IDMuNiAxLjMgNi41IDEuMjdjMS4xODUgMCAyLjc1NC0wLjI1NCA0LjcxMS0wLjc2MiBjMS45OTctMC41MDggMy4zOTctMC45NzMgNC4yMDMtMS4zOTZoMS45MDVsLTEuNTY4IDE1LjY4MmMtMi40NzcgMC42MzUtNS4wODYgMS4xMjEtNy44MjkgMS41IEMyMTIuMTQ4IDEwOC40IDIwOC44IDEwOC42IDIwNC45IDEwOC42MTF6IE0zOC45NzUgNTEuMDZjMS4yOTMtMTYuMTcgMTUuOTg1LTI5LjI3OCAzMi44MTUtMjkuMjc4IGM4LjQzOCAwIDE1LjggMy4zIDIwLjkgOC42Mkw0Mi43ODggNjcuMjk4QzM5LjkzIDYyLjcgMzguNSA1Ny4xIDM5IDUxLjA2eiBNMjQ5LjczMiAxMDcuMjE0aC0yMi4yMjFsNy4xMy03MS4yOTkgaDIyLjIyMkwyNDkuNzMyIDEwNy4yMTR6IE0yNTguNTEzIDI1Ljc1N2gtMjMuNDkxbDEuNzMzLTE3LjMzMmgyMy40OTFMMjU4LjUxMyAyNS43NTd6IE0zNDAuMDI5IDEwNy4yMTRsMy41NjItMzUuNjE3IGMwLjM1Mi0zLjUxMiAwLjU4NC02LjQ3NSAwLjY5Ny04Ljg4OWMwLjExNS0yLjQxMy0wLjA3LTQuMzgxLTAuNTUzLTUuOTA0Yy0wLjQ4LTEuNTI1LTEuMzY3LTIuNjIzLTIuNjUyLTMuMzAzIGMtMS4yNDItMC43MTctMy4wNjYtMS4wNzYtNS40NzktMS4wNzhjLTEuNjk1IDAtMy40MDQgMC4zODEtNS4xMzEgMS4xNDNjLTEuNzIzIDAuNzItMy42MjcgMS43NTgtNS43MDcgMy4xMTFsLTUuMDU1IDUwLjUgaC0yMi4zNDhsMy41NjItMzUuNjE3YzAuMzQ3LTMuNDcxIDAuNTU2LTYuNDExIDAuNjI4LTguODI2YzAuMTE5LTIuNDUzLTAuMDYyLTQuNDQxLTAuNTQ1LTUuOTY3cy0xLjM2OS0yLjYyMy0yLjY1NC0zLjMwMyBjLTEuMjQyLTAuNzE3LTMuMDQ3LTEuMDc2LTUuNDE2LTEuMDc4Yy0xLjgyIDAtMy42NDEgMC40MjQtNS40NiAxLjI3Yy0xLjgyIDAuODQ4LTMuNjEyIDEuODQxLTUuMzc4IDIuOTg0bC01LjA1NCA1MC41MzdoLTIyLjIyMSBsNy4xMy03MS4yOTloMjIuMjIybC0wLjc4OCA3Ljg3M2MzLjk0OC0zLjA5IDcuNjE4LTUuNTAyIDExLjAxLTcuMjM4YzMuMzktMS43MzQgNy4wOTUtMi42MDEgMTEuMTE3LTIuNjAzIGM0LjM1OSAwIDguMSAxIDExLjIgMy4xMTFjMy4wOTQgMi4xIDUuMyA1LjIgNi42IDkuMjdjNC42NzItMy45NzkgOC45OTgtNy4wMjUgMTIuOTc3LTkuMTQzIGM0LjAyNS0yLjE1OCA3Ljk4NC0zLjIzOCAxMS44NzktMy4yMzhjMy4zMDEgMCA2LjIgMC41IDguNyAxLjU4N2MyLjUxNiAxLjEgNC42IDIuNiA2LjIgNC44IGMxLjc2IDIuMyAzIDUgMy42IDguMTg5YzAuNzAzIDMuMSAwLjggNy4yIDAuMyAxMi4zMTdsLTQuNjQzIDQ2LjQxMUgzNDAuMDI5eiBNMzk3LjkwMiAyNS43NTdoLTIzLjQ5IGwxLjczMi0xNy4zMzJoMjMuNDkyTDM5Ny45MDIgMjUuNzU3eiBNNDU1LjU4NyA5MC4xOTljLTIuNjI3LTUuNTAyLTMuNTQzLTEyLjIxNy0yLjc1Mi0yMC4xNDUgYzEuMTY0LTExLjYzOSA1LjQzOC0yMC45MyAxMi44Mi0yNy44NzFjNy4zNzktNi45NDEgMTcuMDgyLTEwLjQxMSAyOS4xMDQtMTAuNDEzYzEwLjkxOCAwIDE4LjggMi45IDIzLjggOC44IGM0LjkxNCA1LjkgNi44IDE0LjMgNS43IDI1LjI3bC0wLjgwMSA4SDQ3NC43NGMtMC4xMTkgMy4zIDAuMyA2LjEgMS4zIDguMzE2YzAuOTY1IDIuMiAyLjQgNCA0LjIgNS4zIGMxLjc3MyAxLjMgMy45IDIuMyA2LjQgMi44NTdjMi40ODIgMC42IDUuMiAwLjggOC4yIDAuODI0YzIuNTgyIDAgNS4xNS0wLjI3MyA3LjcwMS0wLjgyNCBjMi41NTctMC41OTIgNC45MTgtMS4zNTQgNy4wODgtMi4yODdjMS44OTgtMC44MDMgMy42NTYtMS42NyA1LjI3NS0yLjYwMmMxLjY1OC0wLjkzMiAzLjAxLTEuNzU2IDQuMDU3LTIuNDc3aDIuMzVsLTEuODM2IDE4LjMgYy0xLjg5MyAwLjcyMS0zLjYzMSAxLjM5Ni01LjIxOSAyLjAzMWMtMS41NDEgMC41OTQtMy42NTYgMS4yMDctNi4zNDQgMS44NDJjLTIuNDc1IDAuNjM1LTUuMDIxIDEuMTIxLTcuNjM3IDEuNSBjLTEuOTMyIDAuMjg1LTQuMTc2IDAuNDY1LTYuNzMgMC41MzVsLTEwNC4zNzEgMC4wNTVoLTIuMjkxSDM2Ni45bDcuMTMxLTcxLjI5OWgyMi4yMjFsLTUuMzk1IDUzLjk0N2wzNS40NjctMzcuMjVsLTI2LjQ2OSAwLjEgbDEuOTIyLTE2LjM0NGw1My44MzQtMC40NDlsLTEuNDQxIDE0LjQxMmwtMzguMDggMzkuODcxSDQ1NS41ODd6IE01MDIuODczIDYwLjQ2OGMwLjM0Mi00LjY5OS0wLjQtOC4yNzMtMi4yMjktMTAuNzMgYy0xLjc4Ny0yLjQ1NC00Ljc5Ny0zLjY4LTkuMDI5LTMuNjgyYy00LjMxNiAwLTcuODMyIDEuMjkxLTEwLjU0NSAzLjg3M2MtMi42NzIgMi41ODItNC4zNTUgNi4wOTQtNS4wNTMgMTAuNTM5SDUwMi44NzN6IE02MjIuNzA3IDMzLjk5MmwtNDUuNzQ2IDk3LjQ1N2gtMjMuODcxbDEzLjU4LTI3Ljg3MWwtMTUuMTQzLTU0Ljg4M2wtNS42NTggNTYuNTk2aC0yMi4yMjNsOS44ODEtOTguNzg5aDIyLjIyMWwtMi43NSAyNy41IGgxNy44MzhsMTAuNTE0IDQ0LjY5N2wxOC41MDItNDQuNjk3SDYyMi43MDd6IiBjbGFzcz0ic3R5bGUwIi8+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+') no-repeat 0 0;
 #ios {
     margin: 0;
     h1, h2, h3, h4 {
@@ -125,18 +126,14 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
             margin-bottom: 3em;
             background: url('/img/video-play.svg');
         }
-        #email-signup {
+        .email-signup {
             border: 1px solid #889aac;
             background: #4d6d88;
             color: #cfcfcf;
         }
-        #submit-signup {
-            background: #90b71c;
-            color: #fff;
-        }
     }
     .signup-form {
-        #email-signup {
+        .email-signup {
             display: block;
             width: 100%;
             font-size: 1em;
@@ -146,8 +143,7 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
             border-radius: 0;
             margin-bottom: .5em;
         }
-        #submit-signup {
-            
+        .submit-signup {
             display: block;
             border: none;
             width: 100%;
@@ -156,6 +152,8 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
             padding: 1.5em 0;
             -webkit-appearance: none;
             border-radius: 0;
+            background: #90b71c;
+            color: #fff;
         }
     }
     section {
@@ -255,6 +253,19 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
             color: #6b6b6b;
         }
     }
+    footer {
+        text-align: center;
+        background: #006eb6;
+        a {
+            color: #accff2;
+        }
+        p, h1, h2, h3, h4 {
+            color: #fff;
+        }
+        h4 {
+            font-size: 1.3em;
+        }
+    }
 }
 
 
@@ -349,6 +360,47 @@ $font-family: "Gotham A","Gotham B",Helvetica,Arial,sans-serif;
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    #ios {
+            #top {
+            background-image: url(/img/table.jpg);
+            /* 28 x 28 */
+            #video {
+                width: 222px;
+                margin: 0 auto 4em auto;
+            }
+
+        }
+        #hero {
+            
+        }
+        .signup-form {
+            .signup-ios {
+                text-align: center;
+                p {
+                    font-size: 1.2em;
+                }
+                .email-signup {
+                    display: inline;
+                    width: 330px;
+                    padding: .45em;
+                    margin: 0;
+                    border-right: 0;
+                }
+                .submit-signup {
+                    display: inline;
+                    width: 129px;
+                    padding: .53em 0;
+                    -webkit-appearance: none;
+                    margin: -10px 0 0 -4px;
+                }
+            }
+        }
+        section {
+            h2, p {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media print,

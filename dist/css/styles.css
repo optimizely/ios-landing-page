@@ -185,14 +185,11 @@ textarea {
       padding: 10px 0;
       margin-bottom: 3em;
       background: url('/img/video-play.svg'); }
-    #ios #hero #email-signup {
+    #ios #hero .email-signup {
       border: 1px solid #889aac;
       background: #4d6d88;
       color: #cfcfcf; }
-    #ios #hero #submit-signup {
-      background: #90b71c;
-      color: #fff; }
-  #ios .signup-form #email-signup {
+  #ios .signup-form .email-signup {
     display: block;
     width: 100%;
     font-size: 1em;
@@ -201,7 +198,7 @@ textarea {
     -webkit-appearance: none;
     border-radius: 0;
     margin-bottom: 0.5em; }
-  #ios .signup-form #submit-signup {
+  #ios .signup-form .submit-signup {
     display: block;
     border: none;
     width: 100%;
@@ -209,7 +206,9 @@ textarea {
     text-transform: uppercase;
     padding: 1.5em 0;
     -webkit-appearance: none;
-    border-radius: 0; }
+    border-radius: 0;
+    background: #90b71c;
+    color: #fff; }
   #ios section {
     padding-top: 2em;
     padding-bottom: 2em; }
@@ -290,6 +289,15 @@ textarea {
     #ios #signup-bottom h2 {
       text-align: center;
       color: #6b6b6b; }
+  #ios footer {
+    text-align: center;
+    background: #006eb6; }
+    #ios footer a {
+      color: #accff2; }
+    #ios footer p, #ios footer h1, #ios footer h2, #ios footer h3, #ios footer h4 {
+      color: #fff; }
+    #ios footer h4 {
+      font-size: 1.3em; }
 
 /* ==========================================================================
    Helper classes
@@ -357,7 +365,32 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) { }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  #ios #top {
+    background-image: url(/img/table.jpg);
+    /* 28 x 28 */ }
+    #ios #top #video {
+      width: 222px;
+      margin: 0 auto 4em auto; }
+  #ios .signup-form .signup-ios {
+    text-align: center; }
+    #ios .signup-form .signup-ios p {
+      font-size: 1.2em; }
+    #ios .signup-form .signup-ios .email-signup {
+      display: inline;
+      width: 330px;
+      padding: 0.45em;
+      margin: 0;
+      border-right: 0; }
+    #ios .signup-form .signup-ios .submit-signup {
+      display: inline;
+      width: 129px;
+      padding: 0.53em 0;
+      -webkit-appearance: none;
+      margin: -10px 0 0 -4px; }
+  #ios section h2, #ios section p {
+    text-align: center; } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 
