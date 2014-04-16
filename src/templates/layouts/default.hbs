@@ -102,7 +102,7 @@
                     </div>
                     <div id="visual-change-button-color" class="change-option">
                       <p>Button color</p>
-                      <div id="visul-change-color" class="clearfix">
+                      <div id="visual-change-color" class="clearfix">
                         <a href="#" id="visual-change-blue" class="color-btn"></a>
                         <a href="#" id="visual-change-green" class="color-btn"></a>
                         <a href="#" id="visual-change-orange" class="color-btn"></a>
@@ -256,6 +256,12 @@
             var textInput = $('#visual-change-input')
             textInput.keyup(function(){
               textDisplay.text( textInput.val() );
+            });
+            var buttonCont = $('#visual-change-button');
+            $('#visual-change-color').on('click', '.color-btn', function(e){
+              var color = $(e.target).attr('id').replace('visual-change-', '');
+              buttonCont.removeAttr('class').addClass(color);
+              e.preventDefault();
             });
           });
         </script>

@@ -527,7 +527,13 @@ textarea {
     color: #fff;
     padding: 7px;
     overflow: hidden;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+  #ios #visual-change-button.blue {
+    background: #29b8fc; }
+  #ios #visual-change-button.green {
+    background: #c4de9e; }
+  #ios #visual-change-button.orange {
+    background: #f7ad84; } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 

@@ -556,6 +556,15 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             overflow: hidden;
             box-sizing: border-box;
         }
+        #visual-change-button.blue {
+            background: #29b8fc;
+        }
+        #visual-change-button.green {
+            background: #c4de9e;
+        }
+        #visual-change-button.orange {
+            background: #f7ad84;
+        }
     }
 }
 
