@@ -102,7 +102,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         display: block;
     }
     header {
-        padding: 1em 0 0 0;
+        padding: 2em 0 0 0;
     }
     header .logo {
         margin: 0 auto;
@@ -139,7 +139,6 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             border: 2px solid #fff;
             padding: 10px 0;
             margin-bottom: 3em;
-            background: url('/img/video-play.svg');
         }
         .email-signup {
             border: 1px solid #889aac;
@@ -419,6 +418,8 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             #video {
                 width: 222px;
                 margin: 0 auto 4em auto;
+                background: url('/img/play-btn.svg') 185px 6px no-repeat;
+                background-size: 28px 28px;
             }
 
         }
