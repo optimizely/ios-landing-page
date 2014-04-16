@@ -575,6 +575,53 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         #visual-change-button.orange {
             background: #f7ad84;
         }
+        #flexible-powerful {
+            .container {
+                position: relative;
+                background: url(/img/hipmunk-iphone.jpg) top right no-repeat;
+            }
+            .feature {
+                float: left;
+                width: 12.5em;
+                margin-right: 10.6em;
+            }
+            #code-blocks {
+                margin-right: 0;
+            }
+            #switch-interface-cont {
+                display: block;
+            }
+            .section-container {
+                width: 25em;
+                text-align: right;
+                margin-bottom: 8em;
+            }
+            #flexible-powerful-image {
+                position: absolute;
+                right: 41px;
+                top: 24px;
+                background: url(/img/hipmunk-b.jpg);
+                width: 365px;
+                height: 239px;
+                z-index: 1;
+            }
+            #flexible-powerful-slider {
+                position: absolute;
+                right: 3.4em;
+                top: 16em;
+                .slider {
+                    height: 2.65em;
+
+                }
+            }
+            #flexible-powerful-slider.a {
+                .slider {
+                    left: -1px;
+                }
+            }
+
+        }
+
     }
 }
 

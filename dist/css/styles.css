@@ -537,7 +537,38 @@ textarea {
   #ios #visual-change-button.green {
     background: #c4de9e; }
   #ios #visual-change-button.orange {
-    background: #f7ad84; } }
+    background: #f7ad84; }
+  #ios #flexible-powerful .container {
+    position: relative;
+    background: url(/img/hipmunk-iphone.jpg) top right no-repeat; }
+  #ios #flexible-powerful .feature {
+    float: left;
+    width: 12.5em;
+    margin-right: 10.6em; }
+  #ios #flexible-powerful #code-blocks {
+    margin-right: 0; }
+  #ios #flexible-powerful #switch-interface-cont {
+    display: block; }
+  #ios #flexible-powerful .section-container {
+    width: 25em;
+    text-align: right;
+    margin-bottom: 8em; }
+  #ios #flexible-powerful #flexible-powerful-image {
+    position: absolute;
+    right: 41px;
+    top: 24px;
+    background: url(/img/hipmunk-b.jpg);
+    width: 365px;
+    height: 239px;
+    z-index: 1; }
+  #ios #flexible-powerful #flexible-powerful-slider {
+    position: absolute;
+    right: 3.4em;
+    top: 16em; }
+    #ios #flexible-powerful #flexible-powerful-slider .slider {
+      height: 2.65em; }
+  #ios #flexible-powerful #flexible-powerful-slider.a .slider {
+    left: -1px; } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 

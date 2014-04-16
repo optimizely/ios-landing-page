@@ -128,17 +128,17 @@
             </section><!--/#visual-changes-->
             <section id="flexible-powerful" class="blue-section">
               <div class="container">
-                <h2><b>Flexible</b> and <b>powerful</b> developer tools.</h2>
-                <p>Stop compromising between speed and power. Optimizely's simple developer SDK makes it easy to test and target even the most custom features.</p>
-                <div id="switch-interface-cont">
-                  <div id="switch-interface-phone"></div>
-                  <div id="switch-interface-switcher">
-                    <span id="switch-interface-a">a</span>
-                    <span id="switch-interface-b">b</span>
-                    <span id="switch-interface-slider"></span>
-                  </div>
-                </div><!--/#switch-interface-cont-->
-                <div class="feature-container">
+                <div class="section-container">
+                  <h2><b>Flexible</b> and <b>powerful</b> developer tools.</h2>
+                  <p>Stop compromising between speed and power. Optimizely's simple developer SDK makes it easy to test and target even the most custom features.</p>
+                </div><!--/.section-container-->
+                <div id="flexible-powerful-image"></div>
+                <div class="visual-slider-cont a" id="flexible-powerful-slider">
+                  <span class="left-label">a</span>
+                  <span class="right-label">b</span>
+                  <span class="slider"></span>
+                </div><!--/.visual-slider-cont-->
+                <div class="feature-container clearfix">
                   <div id="live-variables" class="feature">
                     <h3>Live variables</h3>
                     <p>Make on-the-fly changes to variables integrated into your app.</p>
@@ -249,7 +249,7 @@
             </div><!--/.row-->
           </div><!--/.container-->
         </footer>
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="/js/jquery.js"></script>
         <script>
           $(function(){
             var textDisplay = $('#visual-change-button');
@@ -259,12 +259,13 @@
             });
             var buttonCont = $('#visual-change-button');
             $('#visual-change-color').on('click', '.color-btn', function(e){
-              var color = $(e.target).attr('id').replace('visual-change-', '');
+              var color = $(e.target).attr('id').repl ace('visual-change-', '');
               buttonCont.removeAttr('class').addClass(color);
               e.preventDefault();
             });
             var visualChangeSlider = $('#visual-change-slider');
             var visualChangePhoto = $('#visual-change-photo');
+            /*
             $('#visual-change-image').on('click', '#visual-change-slider', function(){
               if( visualChangeSlider.hasClass('a') ){
                 visualChangeSlider.removeClass('a').addClass('b');
@@ -274,6 +275,18 @@
                 visualChangePhoto.removeClass('b').addClass('a');
               }
             });
+            */
+
+
+            $('.visual-slider-cont').on('click', function(e){
+              var target = e.target;
+              if( $(this).hasClass('a') ){
+                $(this).removeClass('a').addClass('b');
+              } else {
+                $(this).removeClass('b').addClass('a');
+              }
+            });
+
           });
         </script>
     </body>

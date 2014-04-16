@@ -93,6 +93,11 @@ module.exports = function(grunt) {
         files: [
           {expand: true, flatten: true, src: '<%= config.src %>/img/*.{svg,png,jpg}', dest: '<%= config.dist %>/img/'}
         ]
+      },
+      js: {
+        files: [
+          {expand: true, flatten: true, src: '<%= config.src %>/js/*.js', dest: '<%= config.dist %>/js/'}
+        ]
       }
     },
 
