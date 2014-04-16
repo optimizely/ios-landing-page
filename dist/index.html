@@ -156,8 +156,16 @@
             </section><!--/#flexible-powerful-->
             <section id="trusted" class="light">
               <div class="container">
-                <h2>The most trusted and scalable optimization platform in the world.</h2>
-                <p>Optimizely for iOS is built in the world's #1 optimization platform, trust by more than 6,000 customers globally.</p>
+                <div class="section-container">
+                  <h2>The most trusted and scalable optimization platform in the world.</h2>
+                  <p>Optimizely for iOS is built in the world's #1 optimization platform, trust by more than 6,000 customers globally.</p>
+                </div><!--/.section-container-->
+                <div id="deploy-cont">
+                  <div id="deploy-graphic-cont">
+                    <div id="deployed-graphic"></div>
+                  </div><!--/#deploy-graphic-cont-->
+                  <a href="#" id="deploy-btn">Deploy winning variation</a>
+                </div><!--/#deploy-cont-->
                 <div class="features-container">
                   <div class="feature" id="world-class">
                     <h3>World-class analytics platform</h3>
@@ -175,7 +183,7 @@
               </div><!--/.container-->
             </section><!--/#trusted-->
             <section id="signup-bottom">
-              <h2>Sign up for Optimizely iOS beta</h2>
+              <h2>Sign up for <br>Optimizely iOS beta</h2>
               <div class="signup-form">
                 <form class="signup-ios">
                   <input type="text" class="email-signup" placeholder="email address">
@@ -189,7 +197,7 @@
         <footer>
           <div class="container">
             <div class="row">
-              <div class="footer-rightsreserved columns five">
+              <div class="footer-rightsreserved columns three">
                 <p>&copy; , Optimizely. All Rights Reserved</p>
                 <p>
                   <span id="SL-link-terms" class="SL_swap"><a href="/terms">Terms of Service</a></span>
@@ -204,7 +212,7 @@
                   <span id="SL-link-gplus" class="SL_swap"><a href="https://plus.google.com/113842166556345533815/posts" class="footer-gplus">Google Plus</a></span>
                 </p>
               </div><!--/.footer-rightsreserved-->
-              <div class="columns three">
+              <div class="columns twoo">
                 <h4>Product Features &amp; Benefits</h4>
                 <p><a href="/pricing">Plans and Pricing </a></p>
                 <p><a href="/benefits">Benefits</a></p>
@@ -283,6 +291,13 @@
                   flexiblePowerfulPhone.removeClass('b').addClass('a');
                 }
               }
+            });
+            var deployCont = $('#deploy-graphic-cont');
+            $('#deploy-btn').on('click', function(e){
+              if( !deployCont.hasClass('deployed') ){
+                deployCont.addClass('deployed');
+              }
+              e.preventDefault();
             });
 
           });

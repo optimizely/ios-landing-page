@@ -172,7 +172,8 @@ textarea {
     text-align: center;
     padding-bottom: 2em; }
     #ios #hero h1 {
-      font-size: 2.5em; }
+      font-size: 2.5em;
+      font-weight: 300; }
     #ios #hero #video {
       color: #fff;
       text-decoration: none;
@@ -221,9 +222,12 @@ textarea {
     font-weight: 500; }
   #ios .section-container {
     text-align: center; }
+    #ios .section-container p {
+      font-size: 1.1em; }
   #ios .feature-container {
     padding-top: 2em; }
   #ios .feature {
+    background-size: 39px 38px;
     padding-top: 2.7em;
     margin-bottom: 2.5em;
     background-position: center top;
@@ -240,6 +244,8 @@ textarea {
     color: #aaa; }
   #ios .light .feature h3 {
     color: #9b9b9b; }
+  #ios .visual-slider-cont {
+    display: none; }
   #ios #visual-changes-features {
     background: #ffffff;
     /* Old browsers */
@@ -261,43 +267,39 @@ textarea {
     #ios #visual-changes-features #visual-changes-demo {
       display: none; }
     #ios #visual-changes-features #visual-changes {
-      background-image: url('/img/paintbrush.svg');
-      background-size: 39px 38px; }
+      background-image: url('/img/paintbrush.svg'); }
     #ios #visual-changes-features #starts-seconds {
-      background-image: url('/img/timer.svg');
-      background-size: 39px 38px; }
+      background-image: url('/img/timer.svg'); }
     #ios #visual-changes-features #instant-rollout {
-      background-image: url('/img/instant-rollout.svg');
-      background-size: 39px 38px; }
+      background-image: url('/img/instant-rollout.svg'); }
   #ios #flexible-powerful {
     background: #003366;
     color: #fff; }
-    #ios #flexible-powerful #switch-interface-cont {
-      display: none; }
     #ios #flexible-powerful #live-variables {
-      background-image: url('/img/live-variables.svg');
-      background-size: 39px 38px; }
+      background-image: url('/img/live-variables.svg'); }
     #ios #flexible-powerful #web-mobile {
       background-image: url('/img/web-mobile.svg');
       background-size: 49px 48px; }
     #ios #flexible-powerful #code-blocks {
-      background-image: url('/img/code-blocks.svg');
-      background-size: 39px 38px; }
+      background-image: url('/img/code-blocks.svg'); }
   #ios #trusted #world-class {
-    background-image: url('/img/world-class.svg');
-    background-size: 39px 38px; }
+    background-image: url('/img/world-class.svg'); }
   #ios #trusted #incredibly-responsive {
-    background-image: url('/img/responsive.svg');
-    background-size: 39px 38px; }
+    background-image: url('/img/responsive.svg'); }
   #ios #trusted #enterprise-scale-startup-speed {
-    background-image: url('/img/enterprise.svg');
-    background-size: 39px 38px; }
+    background-image: url('/img/enterprise.svg'); }
+  #ios #deploy-cont {
+    display: none; }
   #ios #signup-bottom {
     background: #f8f8f8;
-    border-top: 1px solid #f3f3f3; }
+    border-top: 1px solid #f3f3f3;
+    padding-bottom: 7em; }
     #ios #signup-bottom h2 {
       text-align: center;
       color: #6b6b6b; }
+    #ios #signup-bottom .email-signup {
+      border: 1px solid #cccccc;
+      border-right: 0; }
   #ios footer {
     text-align: center;
     background: #006eb6; }
@@ -391,7 +393,7 @@ textarea {
       width: 330px;
       padding: 0.45em;
       margin: 0;
-      border-right: 0; }
+      border-right: 0 !important; }
     #ios .signup-form .signup-ios .submit-signup {
       display: inline;
       width: 129px;
@@ -402,6 +404,13 @@ textarea {
 @media only screen and (min-width: 60em) {
   #ios .section-container {
     text-align: left; }
+  #ios .feature {
+    background-size: 60px 59px;
+    padding-top: 4.3em; }
+  #ios #visual-changes, #ios #starts-seconds, #ios #instant-rollout {
+    background-size: 39px 38px; }
+  #ios #flexible-powerful #web-mobile {
+    background-size: 79px 78px; }
   #ios #visual-changes-features {
     height: 700px; }
     #ios #visual-changes-features .container {
@@ -443,6 +452,7 @@ textarea {
     right: 0;
     top: 12em; }
   #ios .visual-slider-cont {
+    display: block;
     text-transform: uppercase;
     border: 1px solid #cacaca;
     border-radius: 3px;
@@ -538,6 +548,12 @@ textarea {
     background: #c4de9e; }
   #ios #visual-change-button.orange {
     background: #f7ad84; }
+  #ios #flexible-powerful .feature, #ios #trusted .feature {
+    float: left;
+    width: 12.5em;
+    margin-right: 10.6em; }
+  #ios #flexible-powerful #code-blocks, #ios #flexible-powerful #enterprise-scale-startup-speed, #ios #trusted #code-blocks, #ios #trusted #enterprise-scale-startup-speed {
+    margin-right: 0; }
   #ios #flexible-powerful .container {
     position: relative;
     background: url(/img/hipmunk-iphone.jpg) top right no-repeat; }
@@ -545,18 +561,15 @@ textarea {
     display: none; }
   #ios #flexible-powerful .container.b #flexible-powerful-image {
     display: block; }
-  #ios #flexible-powerful .feature {
-    float: left;
-    width: 12.5em;
-    margin-right: 10.6em; }
-  #ios #flexible-powerful #code-blocks {
-    margin-right: 0; }
   #ios #flexible-powerful #switch-interface-cont {
     display: block; }
   #ios #flexible-powerful .section-container {
     width: 25em;
     text-align: right;
     margin-bottom: 8em; }
+    #ios #flexible-powerful .section-container p {
+      width: 19em;
+      margin-left: 4em; }
   #ios #flexible-powerful #flexible-powerful-image {
     position: absolute;
     right: 41px;
@@ -572,7 +585,56 @@ textarea {
     #ios #flexible-powerful #flexible-powerful-slider .slider {
       height: 2.65em; }
   #ios #flexible-powerful #flexible-powerful-slider.a .slider {
-    left: -1px; } }
+    left: -1px; }
+  #ios #trusted .section-container {
+    width: 40em;
+    margin: 0 auto;
+    text-align: center; }
+    #ios #trusted .section-container p {
+      width: 20em;
+      margin: 0 auto; }
+  #ios #trusted #deploy-cont {
+    display: block;
+    height: 344px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 3em 0 5em 0; }
+    #ios #trusted #deploy-cont #deploy-graphic-cont {
+      background: url(/img/undeployed.png) top left no-repeat;
+      width: 875px;
+      height: 254px;
+      margin: auto;
+      position: relative; }
+      #ios #trusted #deploy-cont #deploy-graphic-cont #deployed-graphic {
+        height: 254px;
+        width: 875px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: -910px;
+        background: url(/img/deployed.png) top left no-repeat; }
+    #ios #trusted #deploy-cont #deploy-graphic-cont.deployed #deployed-graphic {
+      left: 0; }
+  #ios #trusted #deploy-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 4px solid #e5e5e5;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 210px;
+    text-align: center; }
+  #ios footer {
+    text-align: left;
+    font-size: 0.75em; }
+    #ios footer h4 {
+      font-size: 0.85em;
+      weight: 300; }
+    #ios footer a {
+      text-decoration: none; } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 
