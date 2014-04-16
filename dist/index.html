@@ -14,55 +14,47 @@
     </head>
     <body id="ios">
         <div id="top">
-          <header>
-            <p class="logo"><a href="/">Optimizely</a></p>
-            <ul class="nav-main">
-              <li class="dropdown-hover"><a href="/benefits">Features &amp; Benefits</a>
-                <ul class="dropdown-menu-nav-main">
-                  <li><a href="/pricing">Plans and Pricing</a></li>
-                  <li><a href="/benefits">Benefits</a></li>
-                  <li><a href="/agencies" class="SL_hide">Optimizely for Agencies</a></li>
-                  <li><a href="/developers" class="SL_hide">Optimizely for Developers</a></li>
-                  <li><a href="/ecommerce" class="SL_hide">Optimizely for E-commerce</a></li>
-                  <li><a href="/enterprises" class="SL_hide">Optimizely for Enterprises</a></li>
-                  <li><a href="/publishers" class="SL_hide">Optimizely for Publishers</a></li>
-                  <li><a href="/small-business" class="SL_hide">Optimizely for Small Business</a></li>
-                </ul>
-              </li>
-              <li><a href="/pricing">Pricing</a></li>
-              <li class="dropdown-hover"><a href="/customers">Customers</a>
-                <ul class="dropdown-menu-nav-main">
-                  <li><a href="/customers">Customer List</a></li>
-                  <li><a href="/customers/customer-stories">Customer Stories</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-hover"><a href="/ab-testing">Resources</a>
-                <ul class="dropdown-menu-nav-main">
-                  <li><a href="/ab-testing">What is A/B Testing?</a></li>
-                  <li><a href="/split-testing">What is Split Testing?</a></li>
-                  <li><a href="/gettingstarted">Getting Started</a></li>
-                  <li><a href="/resources/live-demo-webinar">Live Demo Signup</a></li>
-                  <li><a href="/faq">FAQ</a></li>
-                  <li><a href="https://help.optimizely.com" target="_blank">Knowledge Base</a></li>
-                  <li><a href="/docs/api">API Documentation</a></li>
-                  <li id="SL-link-blog" class="SL_swap"><a href="http://blog.optimizely.com" target="_blank">Blog</a></li>
-                  {% comment %}<li><a href="/whatismultivariatetesting">What is Multivariate Testing?</a></li>{% endcomment %}
-                  {% comment %}<li><a href="/casestudies">Case Studies</a></li>{% endcomment %}
-                </ul>
-              </li>
-              <li><a href="/jobs">Jobs</a></li>
-            </ul>
-          </header>
-          <header>
-            <p id="logo">Optimizely</p>
-            <ul>
-              <li><a href="#">Features &amp; Benefits</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Jobs</a></li>
-            </ul>
-          </header>
+          <div class="container">
+            <header class="clearfix">
+              <p class="logo"><a href="/">Optimizely</a></p>
+              <ul class="nav-main">
+                <li class="dropdown-hover"><a href="/benefits">Features &amp; Benefits</a>
+                  <ul class="dropdown-menu-nav-main">
+                    <li><a href="/pricing">Plans and Pricing</a></li>
+                    <li><a href="/benefits">Benefits</a></li>
+                    <li><a href="/agencies" class="SL_hide">Optimizely for Agencies</a></li>
+                    <li><a href="/developers" class="SL_hide">Optimizely for Developers</a></li>
+                    <li><a href="/ecommerce" class="SL_hide">Optimizely for E-commerce</a></li>
+                    <li><a href="/enterprises" class="SL_hide">Optimizely for Enterprises</a></li>
+                    <li><a href="/publishers" class="SL_hide">Optimizely for Publishers</a></li>
+                    <li><a href="/small-business" class="SL_hide">Optimizely for Small Business</a></li>
+                  </ul>
+                </li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li class="dropdown-hover"><a href="/customers">Customers</a>
+                  <ul class="dropdown-menu-nav-main">
+                    <li><a href="/customers">Customer List</a></li>
+                    <li><a href="/customers/customer-stories">Customer Stories</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-hover"><a href="/ab-testing">Resources</a>
+                  <ul class="dropdown-menu-nav-main">
+                    <li><a href="/ab-testing">What is A/B Testing?</a></li>
+                    <li><a href="/split-testing">What is Split Testing?</a></li>
+                    <li><a href="/gettingstarted">Getting Started</a></li>
+                    <li><a href="/resources/live-demo-webinar">Live Demo Signup</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="https://help.optimizely.com" target="_blank">Knowledge Base</a></li>
+                    <li><a href="/docs/api">API Documentation</a></li>
+                    <li id="SL-link-blog" class="SL_swap"><a href="http://blog.optimizely.com" target="_blank">Blog</a></li>
+                    {% comment %}<li><a href="/whatismultivariatetesting">What is Multivariate Testing?</a></li>{% endcomment %}
+                    {% comment %}<li><a href="/casestudies">Case Studies</a></li>{% endcomment %}
+                  </ul>
+                </li>
+                <li><a href="/jobs">Jobs</a></li>
+              </ul>
+            </header>
+          </div><!--/.container-->
           <section id="hero">
             <h1>Fast and scalable A/B testing for iOS apps.</h1>
             <a href="" id="video">Watch video</a>
@@ -197,8 +189,12 @@
         <footer>
           <div class="container">
             <div class="row">
+              <h4><a href="/" class="logo">Optimizely</a></h4>
+            </div><!--/.row-->
+            <div class="row footer-links">
               <div class="footer-rightsreserved columns three">
-                <p>&copy; , Optimizely. All Rights Reserved</p>
+                <p>&copy; 2014, Optimizely.</p>
+                <p>All Rights Reserved</p>
                 <p>
                   <span id="SL-link-terms" class="SL_swap"><a href="/terms">Terms of Service</a></span>
                   <span>|</span>
@@ -212,8 +208,8 @@
                   <span id="SL-link-gplus" class="SL_swap"><a href="https://plus.google.com/113842166556345533815/posts" class="footer-gplus">Google Plus</a></span>
                 </p>
               </div><!--/.footer-rightsreserved-->
-              <div class="columns twoo">
-                <h4>Product Features &amp; Benefits</h4>
+              <div class="columns two">
+                <h4>Features &amp; Benefits</h4>
                 <p><a href="/pricing">Plans and Pricing </a></p>
                 <p><a href="/benefits">Benefits</a></p>
                 <p><a href="/mobile" class="SL_hide">iOS Developer Preview</a></p>
@@ -229,7 +225,7 @@
                 <p><a href="/customers">Customer List</a></p>
                 <p><a href="/customers/customer-stories">Customer Stories</a></p>
               </div>
-              <div class="columns three">
+              <div class="columns two">
                 <h4>Resources</h4>
                 <p><a href="/ab-testing">What is A/B Testing?</a></p>
                 <p><a href="/split-testing">What is Split Testing?</a></p>
@@ -298,6 +294,11 @@
                 deployCont.addClass('deployed');
               }
               e.preventDefault();
+            });
+
+            $('.signup-ios').submit(function(e){
+              alert('submitted');
+              e.preventDefault;
             });
 
           });
