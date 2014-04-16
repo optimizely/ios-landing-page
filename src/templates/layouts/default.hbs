@@ -178,7 +178,7 @@
               <h2>Sign up for <br>Optimizely iOS beta</h2>
               <div class="signup-form">
                 <form class="signup-ios">
-                  <input type="text" class="email-signup" placeholder="email address">
+                  <input type="text" class="email-signup" name="email" placeholder="email address">
                   <input type="submit" value="Sign up" class="submit-signup">
                 </form>
               </div><!--/.signup-form-->
@@ -295,12 +295,18 @@
               }
               e.preventDefault();
             });
-
+            /*
             $('.signup-ios').submit(function(e){
-              alert('submitted');
+              var data = {};
+              $.ajax({
+                type: 'POST',
+                url: '/mobile/notify_me',
+                data: data,
+                success: 
+              });
               e.preventDefault;
             });
-
+            */
           });
         </script>
     </body>
