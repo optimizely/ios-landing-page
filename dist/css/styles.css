@@ -221,6 +221,12 @@ textarea {
     border-radius: 0;
     background: #90b71c;
     color: #fff; }
+  #ios #down {
+    height: 30px;
+    width: 30px;
+    margin: 2.5em auto 0 auto;
+    background: url(/img/down-btn.svg) center center no-repeat;
+    background-size: 30px 30px; }
   #ios section {
     padding-top: 2em;
     padding-bottom: 2em; }

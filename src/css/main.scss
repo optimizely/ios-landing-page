@@ -170,6 +170,13 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             color: #fff;
         }
     }
+    #down {
+        height: 30px;
+        width: 30px;
+        margin: 2.5em auto 0 auto;
+        background: url(/img/down-btn.svg) center center no-repeat;
+        background-size: 30px 30px;
+    }
     section {
         padding-top: 2em;
         padding-bottom: 2em;
