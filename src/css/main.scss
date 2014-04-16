@@ -580,6 +580,16 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 position: relative;
                 background: url(/img/hipmunk-iphone.jpg) top right no-repeat;
             }
+            .container.a {
+                #flexible-powerful-image {
+                    display: none;
+                }
+            }
+            .container.b {
+                #flexible-powerful-image {
+                    display: block;
+                }
+            }
             .feature {
                 float: left;
                 width: 12.5em;

@@ -541,6 +541,10 @@ textarea {
   #ios #flexible-powerful .container {
     position: relative;
     background: url(/img/hipmunk-iphone.jpg) top right no-repeat; }
+  #ios #flexible-powerful .container.a #flexible-powerful-image {
+    display: none; }
+  #ios #flexible-powerful .container.b #flexible-powerful-image {
+    display: block; }
   #ios #flexible-powerful .feature {
     float: left;
     width: 12.5em;
