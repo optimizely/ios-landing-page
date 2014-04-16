@@ -467,6 +467,17 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 color: #9f9f9f;
                 font-weight: 300;
             }
+            cursor: pointer;
+        }
+        .visual-slider-cont.a {
+            .slider {
+                left: 0;
+            }
+        }
+        .visual-slider-cont.b {
+            .slider {
+                right: 0;
+            }
         }
         .slider {
             position: absolute;
@@ -477,7 +488,6 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             width: 3.875em;
             margin-top: -1px;
             box-sizing: border-box;
-            right: 0;
             z-index: 2;
         }
         .left-label, .right-label {

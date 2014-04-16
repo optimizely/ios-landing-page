@@ -89,7 +89,7 @@
                   <div id="visual-change-options">
                     <div id="visual-change-image" class="change-option">
                       <p>Image</p>
-                      <div class="visual-slider-cont">
+                      <div class="visual-slider-cont a" id="visual-change-slider">
                         <span class="left-label">a</span>
                         <span class="right-label">b</span>
                         <span class="slider"></span>
@@ -262,6 +262,17 @@
               var color = $(e.target).attr('id').replace('visual-change-', '');
               buttonCont.removeAttr('class').addClass(color);
               e.preventDefault();
+            });
+            var visualChangeSlider = $('#visual-change-slider');
+            var visualChangePhoto = $('#visual-change-photo');
+            $('#visual-change-image').on('click', '#visual-change-slider', function(){
+              if( visualChangeSlider.hasClass('a') ){
+                visualChangeSlider.removeClass('a').addClass('b');
+                visualChangePhoto.removeClass('a').addClass('b');
+              } else {
+                visualChangeSlider.removeClass('b').addClass('a');
+                visualChangePhoto.removeClass('b').addClass('a');
+              }
             });
           });
         </script>

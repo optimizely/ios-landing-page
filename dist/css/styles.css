@@ -450,12 +450,17 @@ textarea {
     position: relative;
     width: 7.75em;
     height: 2.5em;
-    z-index: 1; }
+    z-index: 1;
+    cursor: pointer; }
     #ios .visual-slider-cont span {
       line-height: 1em;
       position: absolute;
       color: #9f9f9f;
       font-weight: 300; }
+  #ios .visual-slider-cont.a .slider {
+    left: 0; }
+  #ios .visual-slider-cont.b .slider {
+    right: 0; }
   #ios .slider {
     position: absolute;
     height: 2.59em;
@@ -465,7 +470,6 @@ textarea {
     width: 3.875em;
     margin-top: -1px;
     box-sizing: border-box;
-    right: 0;
     z-index: 2; }
   #ios .left-label, #ios .right-label {
     top: 0.2em;
