@@ -210,7 +210,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         height: 30px;
         width: 30px;
         margin: 2.5em auto 0 auto;
-        background: url(/img/down-btn.svg) center center no-repeat;
+        background: url('/img/down-btn.svg') center center no-repeat;
         background-size: 30px 30px;
     }
     section {
@@ -456,7 +456,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     /* Style adjustments for viewports that meet the condition */
     #ios {
             #top {
-                background-image: url(/img/table.jpg);
+                background-image: url('/img/table.jpg');
                 /* 28 x 28 */
                 #video {
                     width: 222px;
@@ -566,7 +566,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 display: block;
                 height: 40.75em;
                 width: 32.5em;
-                background: url(/img/iphone-1.png) left top no-repeat;
+                background: url('/img/iphone-1.png') left top no-repeat;
                 position: relative;
             }
             #visual-change-options {
@@ -702,10 +702,10 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             z-index: 6;
         }
         #visual-change-photo.a {
-            background: url(/img/img-a.jpg);
+            background: url('/img/img-a.jpg');
         }
         #visual-change-photo.b {
-            background: url(/img/img-b.jpg);
+            background: url('/img/img-b.jpg');
         }
         #visual-change-button {
             position: absolute;
@@ -744,7 +744,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         #flexible-powerful {
             .container {
                 position: relative;
-                background: url(/img/hipmunk-iphone.jpg) top right no-repeat;
+                background: url('/img/hipmunk-iphone.jpg') top right no-repeat;
             }
             .container.a {
                 #flexible-powerful-image {
@@ -772,7 +772,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 position: absolute;
                 right: 41px;
                 top: 24px;
-                background: url(/img/hipmunk-b.jpg);
+                background: url('/img/hipmunk-b.jpg');
                 width: 365px;
                 height: 239px;
                 z-index: 1;
@@ -810,7 +810,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 overflow: hidden;
                 margin: 3em 0 5em 0;
                 #deploy-graphic-cont {
-                    background: url(/img/undeployed.png) top left no-repeat;
+                    background: url('/img/undeployed.png') top left no-repeat;
                     width: 875px;
                     height: 254px;
                     margin: auto;
@@ -822,7 +822,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                         z-index: 1;
                         top: 0;
                         left: 0;
-                        background: url(/img/deployed.png) top left no-repeat;
+                        background: url('/img/deployed.png') top left no-repeat;
                     }
                 }
                 #deploy-graphic-cont.deployed {
