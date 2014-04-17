@@ -599,6 +599,13 @@ textarea {
       border: 1px solid #889aac;
       background: #4d6d88;
       color: #cfcfcf; }
+  #ios .sign-up-btn {
+    background: #90b71c;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 0; }
   #ios .signup-form .email-signup {
     display: block;
     width: 100%;
@@ -840,6 +847,10 @@ textarea {
       background-size: 25px 25px; }
   #ios #hero {
     padding-bottom: 4em; }
+  #ios .sign-up-btn {
+    width: 262px;
+    margin: 0 auto;
+    text-align: center; }
   #ios #down {
     display: none; }
   #ios .signup-form .signup-ios {
@@ -894,7 +905,11 @@ textarea {
   #ios #flexible-powerful #web-mobile {
     background-size: 79px 78px; }
   #ios #visual-changes-features {
-    height: 700px; }
+    height: 700px;
+    @-moz-document url-prefix() {
+      #visual-change-options {
+        width: 200px !important; } }
+ }
     #ios #visual-changes-features .container {
       position: relative; }
     #ios #visual-changes-features .section-container {
@@ -909,18 +924,16 @@ textarea {
       position: relative; }
     #ios #visual-changes-features #visual-change-options {
       background: #fff;
-      width: 14em;
+      width: 200px;
       position: absolute;
+      left: 349px;
+      top: 245px;
+      padding: 0 20px;
       border: 1px solid #cdcdcd;
       border-left: 0;
-      box-sizing: border-box;
-      left: 21.8em;
-      bottom: 7.5em;
-      padding: 0.5em 1.7em;
-      border-radius: 2px; }
+      border-radius: 3px; }
       #ios #visual-changes-features #visual-change-options p {
         text-transform: uppercase;
-        color: #9b9b9b;
         margin-bottom: 0; }
     #ios #visual-changes-features .feature {
       text-align: left;
@@ -972,14 +985,15 @@ textarea {
   #ios .right-label {
     z-index: 4;
     right: 0.7em; }
-  #ios #visual-change-button-text input {
+  #ios #visual-change-input {
     width: 100%;
-    padding: 0.7em;
+    padding: 11.2px;
     border-radius: 3px;
     border: 1px solid #9f9f9f;
     box-sizing: border-box;
     box-shadow: inset 0 0 5px #ccc;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    -moz-box-sizing: border-box; }
   #ios .change-option {
     margin-bottom: 1.5em; }
   #ios .color-btn {
@@ -1021,7 +1035,7 @@ textarea {
     height: 35px;
     text-align: center;
     color: #fff;
-    padding: 7px;
+    padding-top: 7px;
     overflow: hidden;
     box-sizing: border-box; }
   #ios #visual-change-button.blue {

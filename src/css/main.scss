@@ -151,6 +151,14 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             color: #cfcfcf;
         }
     }
+    .sign-up-btn {
+        background: #90b71c;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px 0;
+    }
     .signup-form {
         .email-signup {
             display: block;
@@ -459,6 +467,11 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             #hero {
                 padding-bottom: 4em;
             }
+            .sign-up-btn {
+                width: 262px;
+                margin: 0 auto;
+                text-align: center;
+            }
             #down {
                 display: none;
             }
@@ -557,20 +570,23 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             }
             #visual-change-options {
                 background: #fff;
-                width: 14em;
+                width: 200px;
                 position: absolute;
+                left: 349px;
+                top: 245px;
+                padding: 0 20px;
                 border: 1px solid #cdcdcd;
                 border-left: 0;
-                box-sizing: border-box;
-                left: 21.8em;
-                bottom: 7.5em;
-                padding: .5em 1.7em;
-                border-radius: 2px;
+                border-radius: 3px;
                 p {
                     text-transform: uppercase;
-                    color: #9b9b9b;
                     margin-bottom: 0;
                 }
+            }
+            @-moz-document url-prefix() { 
+                #visual-change-options {
+                    width: 200px!important;
+                }      
             }
             .feature {
                 text-align: left;
@@ -638,16 +654,16 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             z-index: 4;
             right: .7em;
         }
-        #visual-change-button-text {
-            input {
-                width: 100%;
-                padding: .7em;
-                border-radius: 3px;
-                border: 1px solid #9f9f9f;
-                box-sizing: border-box;
-                box-shadow: inset 0 0 5px #ccc;
-                font-size: .9em;
-            }
+        #visual-change-input {
+            width: 100%;
+            padding: 11.2px;
+            border-radius: 3px;
+            border: 1px solid #9f9f9f;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 5px #ccc;
+            font-size: .9em;
+            -moz-box-sizing: border-box;
+
         }
         .change-option {
             margin-bottom: 1.5em;
@@ -698,7 +714,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             height: 35px;
             text-align: center;
             color: #fff;
-            padding: 7px;
+            padding-top: 7px;
             overflow: hidden;
             box-sizing: border-box;
         }
