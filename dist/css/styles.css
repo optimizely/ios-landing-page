@@ -605,7 +605,8 @@ textarea {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 15px 0; }
+    padding: 15px 0;
+    text-align: center; }
   #ios .signup-form .email-signup {
     display: block;
     width: 100%;
