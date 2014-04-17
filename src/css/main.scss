@@ -623,12 +623,14 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         }
         .visual-slider-cont.a {
             .slider {
+                transition: left 0.2s ease;
                 left: 0;
             }
         }
         .visual-slider-cont.b {
             .slider {
-                right: 0;
+                transition: left 0.2s ease;
+                left: 62px;
             }
         }
         .slider {
@@ -814,17 +816,18 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                     position: relative;
                     #deployed-graphic {
                         height: 254px;
-                        width: 875px;
+                        width: 0;
                         position: absolute;
                         z-index: 1;
                         top: 0;
-                        left: -910px;
+                        left: 0;
                         background: url(/img/deployed.png) top left no-repeat;
                     }
                 }
                 #deploy-graphic-cont.deployed {
                     #deployed-graphic {
-                        left: 0;
+                        transition: width 0.3s ease;
+                        width: 875px;
                     }
                     #deploy-btn {
                         color: #e5e5e5;
