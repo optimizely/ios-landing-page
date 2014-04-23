@@ -565,9 +565,13 @@ textarea {
     -moz-background-size: 165px 35.31px;
     -o-background-size: 165px 35.31px;
     background-size: 165px 35.31px;
-    padding-top: 35.31px;
+    height: 35.31px;
     width: 165px;
     text-indent: -900em; }
+    #ios header .logo a {
+      display: block;
+      height: 35.31px;
+      width: 165px; }
   #ios .nav-main {
     display: none; }
   #ios #top {
@@ -642,7 +646,7 @@ textarea {
     height: 30px;
     width: 30px;
     margin: 2.5em auto 0 auto;
-    background: url(/img/down-btn.svg) center center no-repeat;
+    background: url('/img/down-btn.svg') center center no-repeat;
     background-size: 30px 30px; }
   #ios section {
     padding-top: 2em;
@@ -839,7 +843,8 @@ textarea {
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
   #ios #top {
-    background-image: url(/img/table.jpg);
+    background-image: url('/img/table.jpg');
+    background-size: 1500px 758px;
     /* 28 x 28 */ }
     #ios #top #video {
       width: 222px;
@@ -921,7 +926,7 @@ textarea {
       display: block;
       height: 40.75em;
       width: 32.5em;
-      background: url(/img/iphone-1.png) left top no-repeat;
+      background: url('/img/iphone-1.png') left top no-repeat;
       position: relative; }
     #ios #visual-changes-features #visual-change-options {
       background: #fff;
@@ -1025,9 +1030,9 @@ textarea {
     left: 80px;
     z-index: 6; }
   #ios #visual-change-photo.a {
-    background: url(/img/img-a.jpg); }
+    background: url('/img/img-a.jpg'); }
   #ios #visual-change-photo.b {
-    background: url(/img/img-b.jpg); }
+    background: url('/img/img-b.jpg'); }
   #ios #visual-change-button {
     position: absolute;
     top: 309px;
@@ -1040,6 +1045,7 @@ textarea {
     color: #fff;
     padding-top: 7px;
     overflow: hidden;
+    line-height: 25px;
     box-sizing: border-box; }
   #ios #visual-change-button.blue {
     background: #29b8fc; }
@@ -1055,7 +1061,7 @@ textarea {
     margin-right: 0; }
   #ios #flexible-powerful .container {
     position: relative;
-    background: url(/img/hipmunk-iphone.jpg) top right no-repeat; }
+    background: url('/img/hipmunk-iphone.jpg') top right no-repeat; }
   #ios #flexible-powerful .container.a #flexible-powerful-image {
     display: none; }
   #ios #flexible-powerful .container.b #flexible-powerful-image {
@@ -1073,7 +1079,7 @@ textarea {
     position: absolute;
     right: 41px;
     top: 24px;
-    background: url(/img/hipmunk-b.jpg);
+    background: url('/img/hipmunk-b.jpg');
     width: 365px;
     height: 239px;
     z-index: 1; }
@@ -1100,7 +1106,7 @@ textarea {
     overflow: hidden;
     margin: 3em 0 5em 0; }
     #ios #trusted #deploy-cont #deploy-graphic-cont {
-      background: url(/img/undeployed.png) top left no-repeat;
+      background: url('/img/undeployed.png') top left no-repeat;
       width: 875px;
       height: 254px;
       margin: auto;
@@ -1112,9 +1118,9 @@ textarea {
         z-index: 1;
         top: 0;
         left: 0;
-        background: url(/img/deployed.png) top left no-repeat; }
+        background: url('/img/deployed.png') top left no-repeat; }
     #ios #trusted #deploy-cont #deploy-graphic-cont.deployed #deployed-graphic {
-      transition: width 0.3s ease;
+      transition: width 0.5s ease;
       width: 875px; }
     #ios #trusted #deploy-cont #deploy-graphic-cont.deployed #deploy-btn {
       color: #e5e5e5;
@@ -1145,7 +1151,25 @@ textarea {
       padding-bottom: 7px;
       font-weight: 300; }
     #ios footer p {
-      line-height: 1.2; } }
+      line-height: 1.2; }
+  html.csstransforms.csstransitions.opacity body#ios .signup-ios {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px);
+    transition: opacity 0.4s, -webkit-transform 0.4s; }
+  html.csstransforms.csstransitions.opacity body#ios #flexible-powerful .container {
+    opacity: 0;
+    -webkit-transform: translate(-100px);
+    transition: opacity 0.7s, -webkit-transform 0.7s; }
+  html.csstransforms.csstransitions.opacity body#ios #trusted .container {
+    opacity: 0;
+    -webkit-transform: translate(100px);
+    transition: opacity 0.7s, -webkit-transform 0.7s; }
+  html.csstransforms.csstransitions.opacity body#ios body.loaded .signup-ios {
+    opacity: 1;
+    -webkit-transform: translate(0, 0); }
+  html.csstransforms.csstransitions.opacity body#ios #flexible-powerful.visible .container, html.csstransforms.csstransitions.opacity body#ios #trusted.visible .container {
+    opacity: 1;
+    -webkit-transform: translate(0); } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 

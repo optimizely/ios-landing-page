@@ -109,9 +109,14 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         -moz-background-size: 165px 35.31px;
         -o-background-size: 165px 35.31px;
         background-size: 165px 35.31px;
-        padding-top: 35.31px;
+        height: 35.31px;
         width: 165px;
         text-indent: -900em;
+        a {
+            display: block;
+            height: 35.31px;
+            width: 165px;
+        }
     }
     .nav-main {
         display: none;
@@ -457,6 +462,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     #ios {
             #top {
                 background-image: url('/img/table.jpg');
+                background-size: 1500px 758px;
                 /* 28 x 28 */
                 #video {
                     width: 222px;
@@ -552,7 +558,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 background-size: 79px 78px;
             }
         }
-        #visual-changes-features { 
+        #visual-changes-features {
             .container {
                 position: relative;
             }
@@ -719,6 +725,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             color: #fff;
             padding-top: 7px;
             overflow: hidden;
+            line-height: 25px;
             box-sizing: border-box;
         }
         #visual-change-button.blue {
@@ -827,7 +834,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 }
                 #deploy-graphic-cont.deployed {
                     #deployed-graphic {
-                        transition: width 0.3s ease;
+                        transition: width 0.5s ease;
                         width: 875px;
                     }
                     #deploy-btn {
@@ -873,6 +880,40 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 line-height: 1.2;
             }
         }
+    }
+
+    html.csstransforms.csstransitions.opacity body#ios {
+
+        .signup-ios {
+            opacity: 0;
+            -webkit-transform: translate(0, 50px);
+            transition: opacity .4s, -webkit-transform .4s;
+        }
+
+        #flexible-powerful .container {
+            opacity: 0;
+            -webkit-transform: translate(-100px);
+            transition: opacity .7s, -webkit-transform .7s;
+        }
+
+        #trusted .container {
+            opacity: 0;
+            -webkit-transform: translate(100px);
+            transition: opacity .7s, -webkit-transform .7s;
+        }
+
+        body.loaded {
+            .signup-ios {
+                opacity: 1;
+                -webkit-transform: translate(0, 0);
+            }
+        }
+
+        #flexible-powerful.visible .container, #trusted.visible .container {
+            opacity: 1;
+            -webkit-transform: translate(0);
+        }
+
     }
 }
 

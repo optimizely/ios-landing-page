@@ -30,7 +30,9 @@
     "time-grunt": "~0.3.1",
     "grunt-sass": "^0.12.1",
     "grunt-contrib-copy": "^0.5.0",
-    "grunt-connect-proxy": "^0.1.10"
+    "grunt-connect-proxy": "^0.1.10",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-autoprefixer": "^0.7.2"
   },
   "licenses": [
     {

@@ -11,7 +11,7 @@
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <link rel="stylesheet" href="https://www.optimizely.com/static/fonts/51725/AC0879F154810B232.css">
         <link rel="stylesheet" href="css/styles.css">
-        <!--<script src="js/vendor/modernizr-2.7.1.min.js"></script>-->
+        <script src="/js/modernizr.js"></script>
     </head>
     <body id="ios">
         <div id="top">
@@ -60,7 +60,16 @@
             <h1>Fast and scalable A/B testing for iOS apps.</h1>
             <h2>Submit once. Iterate daily.</h2>
             <a href="https://www.youtube.com/watch?v=EhuGaDJXqFI" id="video">Watch video</a>
-            <a href="http://pages.optimizely.com/ios-beta-access.html" class="sign-up-btn" target="_blank">Sign up for the beta &raquo;</a>
+            <!--<a href="http://pages.optimizely.com/ios-beta-access.html" class="sign-up-btn" target="_blank">Sign up for the beta &raquo;</a>-->
+            <div class="signup-form" id="intro-signup">
+              <form class="signup-ios">
+              <input type="text" class="email-signup" name="email" placeholder="email address">
+              <input type="submit" value="Sign up" class="submit-signup">
+              </form>
+              <p class="signup-success-message">Thanks for your interest. We're actively expanding our beta program and will notify you when we're ready.</p>
+              <p class="signup-server-error-message">There was an error. Please try again later.</p>
+              <p class="signup-validation-error-message">Invalid email address.</p>
+            </div><!--/.signup-form-->
             <div id="down"></div>
           </section><!--/#hero-->
         </div><!--/#top-->
@@ -243,18 +252,40 @@
         </footer>
         <script src="/js/jquery.js"></script>
         <script src="/js/jquery.magnific-popup.min.js"></script>
+        <script src="/js/waypoints.min.js"></script>
         <script>
           $(function(){
+            $('body').addClass('loaded');
             $('#video').magnificPopup({type:'iframe'});
+            $('#video').click(function(){
+              _gaq.push(['_trackEvent', 'Mobile landing page', 'Video click']);
+            });
             var textDisplay = $('#visual-change-button');
             var textInput = $('#visual-change-input')
+
+            $('#flexible-powerful').waypoint({
+              handler: function(){
+                $('#flexible-powerful').addClass('visible');
+              },
+              offset: 400
+            });
+
+            $('#trusted').waypoint({
+              handler: function(){
+                $('#trusted').addClass('visible');
+              },
+              offset: 400
+            });
+
             textInput.keyup(function(){
               textDisplay.text( textInput.val() );
+              _gaq.push(['_trackEvent', 'Mobile landing page', 'text change']);
             });
             var buttonCont = $('#visual-change-button');
             $('#visual-change-color').on('click', '.color-btn', function(e){
               var color = $(e.target).attr('id').replace('visual-change-', '');
               buttonCont.removeAttr('class').addClass(color);
+              _gaq.push(['_trackEvent', 'Mobile landing page', 'color change', color]);
               e.preventDefault();
             });
             /* sliders */
@@ -266,15 +297,19 @@
                 $(this).removeClass('a').addClass('b');
                 if( slider === 'visual-change-slider' ){
                   visualChangePhoto.removeClass('a').addClass('b');
+                  _gaq.push(['_trackEvent', 'Mobile landing page', 'slider click', 'visual change', 'b']);
                 } else {
                   flexiblePowerfulPhone.removeClass('a').addClass('b');
+                  _gaq.push(['_trackEvent', 'Mobile landing page', 'slider click', 'flexible powerful', 'b']);
                 }
               } else {
                 $(this).removeClass('b').addClass('a');
                 if( slider === 'visual-change-slider' ){
                   visualChangePhoto.removeClass('b').addClass('a');
+                  _gaq.push(['_trackEvent', 'Mobile landing page', 'slider click', 'visual change', 'a']);
                 } else {
                   flexiblePowerfulPhone.removeClass('b').addClass('a');
+                  _gaq.push(['_trackEvent', 'Mobile landing page', 'slider click', 'flexible powerful', 'a']);
                 }
               }
             });
@@ -282,27 +317,38 @@
             $('#deploy-btn').on('click', function(e){
               if( !deployCont.hasClass('deployed') ){
                 deployCont.addClass('deployed');
+                _gaq.push(['_trackEvent', 'Mobile landing page', 'deploy click']);
               }
               e.preventDefault();
             });
             var emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             $('.signup-ios').submit(function(e){
               var data = $(this).serializeArray();
-              console.log(data[0].value);
+              var form = $(this);
               if( emailRegex.test(data[0].value) ){
                 data.push({name: 'hidden', value: 'touched'});
                 data.push({name: 'status', value: 'sending'});
                 $.ajax({
                   type: 'POST',
-                  url: '/mobile/nofity_me',
+                  url: '/mobile/notify_me',
                   data: data,
                   dataType: 'json'
-                }).always(function(response){
-                  console.log(response);
-                  if(response.status === 200){
-                    $('.signup-ios').parent().addClass('signup-success').removeClass('signup-server-error').removeClass('signup-validation-error');
+                }).always(function(response, textStatus, xhrObject){
+                  if(xhrObject.status === 200){
+                    form.parent().addClass('signup-success').removeClass('signup-server-error').removeClass('signup-validation-error');
+                    var token = response.token;
+                    var leadInfo = {
+                      'Email': data[0].value,
+                      'Inbound_Lead_Form_Type__c': 'Mobile Launch Notification Request',
+                      'requestedMobileLaunchNotification': true
+                    }
+                    window['mktoMunchkinFunction'](
+                      'associateLead',
+                      leadInfo,
+                      token
+                    );
                   } else {
-                    $('.signup-ios').parent().addClass('signup-server-error').removeClass('signup-validation-error');
+                    form.parent().addClass('signup-server-error').removeClass('signup-validation-error');
                   }
                 });
               } else {

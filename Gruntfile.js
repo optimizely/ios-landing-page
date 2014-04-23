@@ -76,6 +76,15 @@ module.exports = function(grunt) {
         }
       }
     },
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions']
+      },
+      files: {
+        src: '<%= config.dist %>/css/styles.css',
+        dest: '<%= config.dist %>/css/styles.css'
+      }
+    },
     assemble: {
       pages: {
         options: {
@@ -111,6 +120,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
