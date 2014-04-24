@@ -884,7 +884,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
 
     html.csstransforms.csstransitions.opacity body#ios {
 
-        .signup-ios {
+        #intro-signup {
             opacity: 0;
             -webkit-transform: translate(0, 50px);
             transition: opacity .4s, -webkit-transform .4s;
@@ -902,18 +902,18 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             transition: opacity .7s, -webkit-transform .7s;
         }
 
-        body.loaded {
-            .signup-ios {
-                opacity: 1;
-                -webkit-transform: translate(0, 0);
-            }
-        }
-
         #flexible-powerful.visible .container, #trusted.visible .container {
             opacity: 1;
             -webkit-transform: translate(0);
         }
 
+    }
+
+    html.csstransforms.csstransitions.opacity body#ios.loaded {
+        #intro-signup {
+            opacity: 1;
+            -webkit-transform: translate(0, 0);
+        }
     }
 }
 

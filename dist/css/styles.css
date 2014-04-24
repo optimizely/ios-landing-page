@@ -1152,7 +1152,7 @@ textarea {
       font-weight: 300; }
     #ios footer p {
       line-height: 1.2; }
-  html.csstransforms.csstransitions.opacity body#ios .signup-ios {
+  html.csstransforms.csstransitions.opacity body#ios #intro-signup {
     opacity: 0;
     -webkit-transform: translate(0, 50px);
     transition: opacity 0.4s, -webkit-transform 0.4s; }
@@ -1164,12 +1164,12 @@ textarea {
     opacity: 0;
     -webkit-transform: translate(100px);
     transition: opacity 0.7s, -webkit-transform 0.7s; }
-  html.csstransforms.csstransitions.opacity body#ios body.loaded .signup-ios {
-    opacity: 1;
-    -webkit-transform: translate(0, 0); }
   html.csstransforms.csstransitions.opacity body#ios #flexible-powerful.visible .container, html.csstransforms.csstransitions.opacity body#ios #trusted.visible .container {
     opacity: 1;
-    -webkit-transform: translate(0); } }
+    -webkit-transform: translate(0); }
+  html.csstransforms.csstransitions.opacity body#ios.loaded #intro-signup {
+    opacity: 1;
+    -webkit-transform: translate(0, 0); } }
 
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { }
 
