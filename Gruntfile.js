@@ -128,6 +128,7 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'sass',
+    'autoprefixer',
     'assemble',
     'connect:livereload',
     'watch'
@@ -137,6 +138,7 @@ module.exports = function(grunt) {
     'clean',
     'copy',
     'sass',
+    'autoprefixer',
     'assemble'
   ]);
 

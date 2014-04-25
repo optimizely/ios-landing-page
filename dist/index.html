@@ -250,6 +250,9 @@
             </div><!--/.row-->
           </div><!--/.container-->
         </footer>
+        <div id="preload-airbnb-img" class="preload"></div>
+        <div id="preload-hipmunk-img" class="preload"></div>
+        <div id="preload-deploy-img" class="preload"></div>
         <script src="/js/jquery.js"></script>
         <script src="/js/jquery.magnific-popup.min.js"></script>
         <script src="/js/waypoints.min.js"></script>
@@ -267,14 +270,14 @@
               handler: function(){
                 $('#flexible-powerful').addClass('visible');
               },
-              offset: 400
+              offset: 700
             });
 
             $('#trusted').waypoint({
               handler: function(){
                 $('#trusted').addClass('visible');
               },
-              offset: 400
+              offset: 700
             });
 
             textInput.keyup(function(){
@@ -347,6 +350,7 @@
                       leadInfo,
                       token
                     );
+                    window.location = "http://pages.optimizely.com/ios-beta-access.html";
                   } else {
                     form.parent().addClass('signup-server-error').removeClass('signup-validation-error');
                   }

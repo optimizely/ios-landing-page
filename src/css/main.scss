@@ -187,6 +187,10 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             border-radius: 0;
             background: #90b71c;
             color: #fff;
+            cursor: pointer;
+        }
+        .submit-signup:hover {
+            background-color: #90b71c;
         }
         .signup-success-message, .signup-server-error-message, .signup-validation-error-message  {
             display: none;
@@ -512,6 +516,15 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
 
 @media only screen and (min-width: 60em){
     #ios {
+        #preload-airbnb-img {
+            background: url('/img/img-b.jpg') no-repeat -9999px -9999px;
+        }
+        #preload-hipmunk-img {
+            background: url('/img/hipmunk-b.jpg') no-repeat -9999px -9999px;
+        }
+        #preload-deploy-img {
+            background: url('/img/deployed.jpg') no-repeat -9999px -9999px;
+        }
         header {
             .logo {
                 margin: 0;
@@ -589,11 +602,6 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                     text-transform: uppercase;
                     margin-bottom: 0;
                 }
-            }
-            @-moz-document url-prefix() { 
-                #visual-change-options {
-                    width: 200px!important;
-                }      
             }
             .feature {
                 text-align: left;
@@ -886,25 +894,25 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
 
         #intro-signup {
             opacity: 0;
-            -webkit-transform: translate(0, 50px);
-            transition: opacity .4s, -webkit-transform .4s;
+            transform: translate(0, 50px);
+            transition: opacity .6s, transform .6s;
         }
 
         #flexible-powerful .container {
             opacity: 0;
-            -webkit-transform: translate(-100px);
-            transition: opacity .7s, -webkit-transform .7s;
+            transform: translate(-100px);
+            transition: opacity .7s, transform .7s;
         }
 
         #trusted .container {
             opacity: 0;
-            -webkit-transform: translate(100px);
-            transition: opacity .7s, -webkit-transform .7s;
+            transform: translate(100px);
+            transition: opacity .7s, transform .7s;
         }
 
         #flexible-powerful.visible .container, #trusted.visible .container {
             opacity: 1;
-            -webkit-transform: translate(0);
+            transform: translate(0);
         }
 
     }
@@ -912,7 +920,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     html.csstransforms.csstransitions.opacity body#ios.loaded {
         #intro-signup {
             opacity: 1;
-            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
         }
     }
 }
