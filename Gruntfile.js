@@ -24,21 +24,37 @@ module.exports = function(grunt) {
 
     config: {
       src: 'src',
-      dist: 'dist'
+      dist: 'dist',
+      temp: 'temp',
+      dev: {
+        options: {
+          variables: {
+            'assetspath': '/img',
+            'assetsfilepath': ''
+          }
+        }
+      },
+      prod: {
+        options: {
+          variables: {
+            'assetspath': '/static/mobile/img',
+            'assetsfilepath': '/static/mobile'
+          }
+        }
+      }
     },
-
     watch: {
       assemble: {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
-        tasks: ['assemble']
+        tasks: ['config:dev', 'assemble', 'copy:index']
       },
       sass: {
         files: ['<%= config.src %>/css/*.scss'],
-        tasks: ['sass']
+        tasks: ['config:dev', 'copy:css', 'copy:maincss', 'sass', 'autoprefixer', 'clean:after']
       },
       copy: {
         files: ['<%= config.src %>/img/*.{svg,png,jpg}'],
-        tasks: ['copy']
+        tasks: ['copy:images', 'copy:js']
       },
       livereload: {
         options: {
@@ -52,7 +68,6 @@ module.exports = function(grunt) {
         ]
       }
     },
-
     connect: {
       options: {
         port: 9000,
@@ -72,7 +87,7 @@ module.exports = function(grunt) {
     sass: {
       compileCSS: {
         files: {
-          '<%= config.dist %>/css/styles.css': '<%= config.src %>/css/styles.scss'
+          '<%= config.dist %>/css/styles.css': '<%= config.temp %>/css/styles.scss'
         }
       }
     },
@@ -98,6 +113,34 @@ module.exports = function(grunt) {
       }
     },
     copy: {
+      css: {
+        files: [
+          {
+            cwd: '<%= config.src %>/css/',
+            src: ['**', '!main.scss'],
+            dest: '<%= config.temp %>/css/',
+            expand: true
+          }
+        ]
+      },
+      maincss: {
+        src: '<%= config.src %>/css/main.scss',
+        dest: '<%= config.temp %>/css/main.scss',
+        options: {
+          process: function (content, srcpath) {
+            return content.replace(/@@assetspath/g, grunt.config.get("assetspath") );
+          }
+        }
+      },
+      index: {
+        src: '<%= config.dist %>/index.html',
+        dest: '<%= config.dist %>/index.html',
+        options: {
+          process: function (content, srcpath) {
+            return content.replace(/@@assetsfilepath/g, grunt.config.get("assetsfilepath") );
+          }
+        }
+      },
       images: {
         files: [
           {expand: true, flatten: true, src: '<%= config.src %>/img/*.{svg,png,jpg}', dest: '<%= config.dist %>/img/'}
@@ -112,8 +155,10 @@ module.exports = function(grunt) {
 
     // Before generating any new files,
     // remove any previously-created files.
-    clean: ['<%= config.dist %>/**/*.{html,xml}']
-
+    clean: {
+      before: '<%= config.dist %>',
+      after: '<%= config.temp %>'
+    }
   });
 
   grunt.loadNpmTasks('assemble');
@@ -123,23 +168,35 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-config');
 
   grunt.registerTask('server', [
-    'clean',
-    'copy',
+    'config:dev',
+    'clean:before',
+    'copy:css',
+    'copy:maincss',
+    'copy:images',
+    'copy:js',
     'sass',
     'autoprefixer',
     'assemble',
+    'copy:index',
     'connect:livereload',
     'watch'
   ]);
 
   grunt.registerTask('build', [
+    'config:prod',
     'clean',
-    'copy',
+    'copy:css',
+    'copy:maincss',
+    'copy:images',
+    'copy:js',
     'sass',
     'autoprefixer',
-    'assemble'
+    'assemble',
+    'copy:index',
+    'clean:after'
   ]);
 
   grunt.registerTask('default', [

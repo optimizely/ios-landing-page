@@ -219,7 +219,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         height: 30px;
         width: 30px;
         margin: 2.5em auto 0 auto;
-        background: url('@@assetspath/down-btn.svg') center center no-repeat;
+        background: url('/img/down-btn.svg') center center no-repeat;
         background-size: 30px 30px;
     }
     section {
@@ -289,38 +289,38 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             display: none;
         }
         #visual-changes {
-            background-image: url('@@assetspath/paintbrush.svg');
+            background-image: url('/img/paintbrush.svg');
         }
         #starts-seconds {
-            background-image: url('@@assetspath/timer.svg');
+            background-image: url('/img/timer.svg');
         }
         #instant-rollout {
-            background-image: url('@@assetspath/instant-rollout.svg');
+            background-image: url('/img/instant-rollout.svg');
         }
     }
     #flexible-powerful {
         background: #003366;
         color: #fff;
         #live-variables {
-            background-image: url('@@assetspath/live-variables.svg');
+            background-image: url('/img/live-variables.svg');
         }
         #web-mobile {
-            background-image: url('@@assetspath/web-mobile.svg');
+            background-image: url('/img/web-mobile.svg');
             background-size: 49px 48px;
         }
         #code-blocks {
-            background-image: url('@@assetspath/code-blocks.svg');
+            background-image: url('/img/code-blocks.svg');
         }
     }
     #trusted {
         #world-class {
-            background-image: url('@@assetspath/world-class.svg');
+            background-image: url('/img/world-class.svg');
         }
         #incredibly-responsive {
-            background-image: url('@@assetspath/responsive.svg');
+            background-image: url('/img/responsive.svg');
         }
         #enterprise-scale-startup-speed {
-            background-image: url('@@assetspath/enterprise.svg');
+            background-image: url('/img/enterprise.svg');
         }
     }
     #deploy-cont {
@@ -465,13 +465,13 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     /* Style adjustments for viewports that meet the condition */
     #ios {
             #top {
-                background-image: url('@@assetspath/table.jpg');
+                background-image: url('/img/table.jpg');
                 background-size: 1500px 758px;
                 /* 28 x 28 */
                 #video {
                     width: 222px;
                     margin: 0 auto 4em auto;
-                    background: url('@@assetspath/play-btn.svg') 185px 6px no-repeat;
+                    background: url('/img/play-btn.svg') 185px 6px no-repeat;
                     background-size: 25px 25px;
                 }
             }
@@ -517,13 +517,13 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
 @media only screen and (min-width: 60em){
     #ios {
         #preload-airbnb-img {
-            background: url('@@assetspath/img-b.jpg') no-repeat -9999px -9999px;
+            background: url('/img/img-b.jpg') no-repeat -9999px -9999px;
         }
         #preload-hipmunk-img {
-            background: url('@@assetspath/hipmunk-b.jpg') no-repeat -9999px -9999px;
+            background: url('/img/hipmunk-b.jpg') no-repeat -9999px -9999px;
         }
         #preload-deploy-img {
-            background: url('@@assetspath/deployed.jpg') no-repeat -9999px -9999px;
+            background: url('/img/deployed.jpg') no-repeat -9999px -9999px;
         }
         header {
             .logo {
@@ -585,7 +585,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 display: block;
                 height: 40.75em;
                 width: 32.5em;
-                background: url('@@assetspath/iphone-1.png') left top no-repeat;
+                background: url('/img/iphone-1.png') left top no-repeat;
                 position: relative;
             }
             #visual-change-options {
@@ -716,10 +716,10 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             z-index: 6;
         }
         #visual-change-photo.a {
-            background: url('@@assetspath/img-a.jpg');
+            background: url('/img/img-a.jpg');
         }
         #visual-change-photo.b {
-            background: url('@@assetspath/img-b.jpg');
+            background: url('/img/img-b.jpg');
         }
         #visual-change-button {
             position: absolute;
@@ -759,7 +759,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         #flexible-powerful {
             .container {
                 position: relative;
-                background: url('@@assetspath/hipmunk-iphone.jpg') top right no-repeat;
+                background: url('/img/hipmunk-iphone.jpg') top right no-repeat;
             }
             .container.a {
                 #flexible-powerful-image {
@@ -787,7 +787,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 position: absolute;
                 right: 41px;
                 top: 24px;
-                background: url('@@assetspath/hipmunk-b.jpg');
+                background: url('/img/hipmunk-b.jpg');
                 width: 365px;
                 height: 239px;
                 z-index: 1;
@@ -825,7 +825,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 overflow: hidden;
                 margin: 3em 0 5em 0;
                 #deploy-graphic-cont {
-                    background: url('@@assetspath/undeployed.png') top left no-repeat;
+                    background: url('/img/undeployed.png') top left no-repeat;
                     width: 875px;
                     height: 254px;
                     margin: auto;
@@ -837,7 +837,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                         z-index: 1;
                         top: 0;
                         left: 0;
-                        background: url('@@assetspath/deployed.png') top left no-repeat;
+                        background: url('/img/deployed.png') top left no-repeat;
                     }
                 }
                 #deploy-graphic-cont.deployed {

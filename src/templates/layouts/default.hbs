@@ -10,8 +10,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
         <link rel="stylesheet" href="https://www.optimizely.com/static/fonts/51725/AC0879F154810B232.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="/js/modernizr.js"></script>
+        <link rel="stylesheet" href="@@assetsfilepath/css/styles.css">
+        <script src="@@assetsfilepath/js/modernizr.js"></script>
     </head>
     <body id="ios">
         <div id="top">
@@ -191,7 +191,7 @@
                 <p class="signup-server-error-message">There was an error. Please try again later.</p>
                 <p class="signup-validation-error-message">Invalid email address.</p>
               </div><!--/.signup-form-->
-            </section>                        
+            </section>
           </main>
           {{> body }}
         </div>
@@ -369,7 +369,7 @@
               return false;
               e.preventDefault;
             });
-            
+
           });
         </script>
         <!-- Google Analytics -->
