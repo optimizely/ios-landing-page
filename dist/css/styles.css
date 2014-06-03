@@ -964,13 +964,15 @@ textarea {
       color: #9f9f9f;
       font-weight: 300; }
   #ios .visual-slider-cont.a .slider {
-    -webkit-transition: left 0.2s ease;
-    transition: left 0.2s ease;
-    left: 0; }
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
   #ios .visual-slider-cont.b .slider {
-    -webkit-transition: left 0.2s ease;
-    transition: left 0.2s ease;
-    left: 62px; }
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    -webkit-transform: translateX(63px);
+    transform: translateX(63px); }
   #ios .slider {
     position: absolute;
     height: 2.59em;
