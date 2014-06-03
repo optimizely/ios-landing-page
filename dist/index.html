@@ -61,7 +61,7 @@
             <h2>Submit once. Iterate daily.</h2>
             <a href="https://www.youtube.com/watch?v=EhuGaDJXqFI" id="video">Watch video</a>
             <a href="/signin?signup=true&mobile=true" class="sign-up-btn">Sign up for the beta &raquo;</a>
-
+            
             <div id="down"></div>
           </section><!--/#hero-->
         </div><!--/#top-->
@@ -185,7 +185,7 @@
               </div><!--/.signup-form-->
             </section>
           </main>
-
+          
         </div>
         <footer>
           <div class="container">
@@ -258,6 +258,7 @@
         <script src="/static/mobile/js/waypoints.min.js"></script>
         <script>
           $(function(){
+            var INBOUND_LEAD_FORM_TYPE = 'Mobile Launch Notification Request';
             $('body').addClass('loaded');
             $('#video').magnificPopup({type:'iframe'});
             $('#video').click(function(){
@@ -348,7 +349,7 @@
                     var token = response.token;
                     var leadInfo = {
                       'Email': data[0].value,
-                      'Inbound_Lead_Form_Type__c': 'Mobile Launch Notification Request',
+                      'Inbound_Lead_Form_Type__c': INBOUND_LEAD_FORM_TYPE,
                       'requestedMobileLaunchNotification': true
                     }
                     window['mktoMunchkinFunction'](
