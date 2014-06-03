@@ -466,7 +466,9 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     #ios {
             #top {
                 background-image: url('@@assetspath/table.jpg');
-                background-size: 1500px 758px;
+                background-size: cover;
+                background-position: center;
+
                 /* 28 x 28 */
                 #video {
                     width: 222px;

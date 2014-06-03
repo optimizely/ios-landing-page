@@ -836,7 +836,8 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
   #ios #top {
     background-image: url('/img/table.jpg');
-    background-size: 1500px 758px;
+    background-size: cover;
+    background-position: center;
     /* 28 x 28 */ }
     #ios #top #video {
       width: 222px;
