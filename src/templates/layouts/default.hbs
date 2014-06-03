@@ -268,6 +268,7 @@
         <script src="@@assetsfilepath/js/waypoints.min.js"></script>
         <script>
           $(function(){
+            var INBOUND_LEAD_FORM_TYPE = 'Mobile Launch Notification Request';
             $('body').addClass('loaded');
             $('#video').magnificPopup({type:'iframe'});
             $('#video').click(function(){
@@ -358,7 +359,7 @@
                     var token = response.token;
                     var leadInfo = {
                       'Email': data[0].value,
-                      'Inbound_Lead_Form_Type__c': 'Mobile Launch Notification Request',
+                      'Inbound_Lead_Form_Type__c': INBOUND_LEAD_FORM_TYPE,
                       'requestedMobileLaunchNotification': true
                     }
                     window['mktoMunchkinFunction'](
