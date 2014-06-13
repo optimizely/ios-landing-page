@@ -596,6 +596,8 @@ textarea {
       border: 1px solid #889aac;
       background: #4d6d88;
       color: #cfcfcf; }
+    #ios #hero p a {
+      color: #fff; }
   #ios .sign-up-btn {
     background: #90b71c;
     display: block;
@@ -603,7 +605,8 @@ textarea {
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 0;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 35px; }
   #ios .signup-form .email-signup {
     display: block;
     width: 100%;
@@ -736,6 +739,10 @@ textarea {
     #ios #signup-bottom .email-signup {
       border: 1px solid #cccccc;
       border-right: 0; }
+    #ios #signup-bottom p {
+      text-align: center; }
+      #ios #signup-bottom p a {
+        color: #222; }
   #ios footer {
     padding: 2em 0 5em 0;
     text-align: center;
@@ -848,7 +855,7 @@ textarea {
     padding-bottom: 4em; }
   #ios .sign-up-btn {
     width: 160px;
-    margin: 0 auto;
+    margin: 0 auto 45px auto;
     text-align: center; }
   #ios #down {
     display: none; }
