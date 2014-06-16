@@ -155,6 +155,9 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             background: #4d6d88;
             color: #cfcfcf;
         }
+        p a {
+          color: #fff;
+        }
     }
     .sign-up-btn {
         background: #90b71c;
@@ -164,6 +167,7 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         text-transform: uppercase;
         padding: 15px 0;
         text-align: center;
+        margin-bottom: 35px;
     }
     .signup-form {
         .email-signup {
@@ -338,6 +342,10 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
             border: 1px solid #cccccc;
             border-right: 0;
         }
+        p {
+          text-align: center;
+          a {color: #222;}
+        }
     }
     footer {
         padding: 2em 0 5em 0;
@@ -466,7 +474,9 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
     #ios {
             #top {
                 background-image: url('@@assetspath/table.jpg');
-                background-size: 1500px 758px;
+                background-size: cover;
+                background-position: center;
+
                 /* 28 x 28 */
                 #video {
                     width: 222px;
@@ -479,8 +489,8 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
                 padding-bottom: 4em;
             }
             .sign-up-btn {
-                width: 262px;
-                margin: 0 auto;
+                width: 160px;
+                margin: 0 auto 45px auto;
                 text-align: center;
             }
             #down {
@@ -638,14 +648,14 @@ $logo: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMj
         }
         .visual-slider-cont.a {
             .slider {
-                transition: left 0.2s ease;
-                left: 0;
+                transition: transform 0.2s ease;
+                transform: translateX(0);
             }
         }
         .visual-slider-cont.b {
             .slider {
-                transition: left 0.2s ease;
-                left: 62px;
+                transition: transform 0.2s ease;
+                transform: translateX(63px);
             }
         }
         .slider {

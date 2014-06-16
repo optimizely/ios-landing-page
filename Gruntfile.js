@@ -46,7 +46,7 @@ module.exports = function(grunt) {
     watch: {
       assemble: {
         files: ['<%= config.src %>/{content,data,templates}/{,*/}*.{md,hbs,yml}'],
-        tasks: ['config:dev', 'assemble', 'copy:index']
+        tasks: ['config:dev', 'assemble', 'copy:index', 'clean:after']
       },
       sass: {
         files: ['<%= config.src %>/css/*.scss'],
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
       },
       copy: {
         files: ['<%= config.src %>/img/*.{svg,png,jpg}'],
-        tasks: ['copy:images', 'copy:js']
+        tasks: ['copy:images', 'copy:js', 'clean:after']
       },
       livereload: {
         options: {
@@ -181,6 +181,7 @@ module.exports = function(grunt) {
     'autoprefixer',
     'assemble',
     'copy:index',
+    'clean:after',
     'connect:livereload',
     'watch'
   ]);
